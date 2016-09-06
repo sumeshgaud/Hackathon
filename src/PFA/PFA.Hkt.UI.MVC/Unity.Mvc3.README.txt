@@ -10,6 +10,6 @@ registered with the HierarchicalLifetimeManager to ensure that theey are properl
 
 It is typically not necessary to register your controllers with Unity.
 
-You can find out more about Unity.Mvc3 by visiting: vs
+You can find out more about Unity.Mvc3 by visiting: v
 
 http://devtrends.co.uk/blog/introducing-the-unity.mvc3-nuget-package-to-reconcile-mvc3-unity-and-idisposable

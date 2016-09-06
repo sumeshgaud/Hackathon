@@ -12,7 +12,7 @@
                 </li>
 
                 <li class="@(ViewBag.Menu == "Budget" ? "selected" : "")">
-                    <a href="#">Budget</a>
+                    <a href="@Url.Action("Index", "Budget")">Budget</a>
                 </li>
                 <li class="@(ViewBag.Menu == "Investment" ? "selected" : "")">
                     <a href="#">Investments</a>

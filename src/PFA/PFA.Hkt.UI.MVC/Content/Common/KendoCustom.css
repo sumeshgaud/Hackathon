@@ -1,0 +1,418 @@
+﻿/*Extended Kendo date time controls*/
+.k-calendar {
+    font-family: helvetica;
+}
+
+.k-popup.k-calendar-container {
+    background-clip: padding-box;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #ddd;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 5px;
+}
+
+.k-header {
+    bacground-image: none;
+    font-weight: bold;
+}
+
+.k-calendar th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.k-calendar .k-footer .k-nav-today {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+    .k-calendar .k-footer .k-nav-today a:hover {
+        text-decoration: none;
+    }
+
+.k-calendar .k-footer {
+    border-top: 0;
+    margin: 0;
+}
+
+.k-panelbar .k-state-focused.k-state-selected, td.k-state-focused.k-state-selected, .k-state-selected td.k-state-focused, .k-listview > .k-state-focused.k-state-selected {
+    box-shadow: none;
+}
+
+.k-calendar .k-state-selected.k-state-focused > .k-link {
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(center top, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.k-textbox, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap {
+    padding: 4px 22px 4px 2px;
+}
+
+.k-widget.k-datepicker.form-control {
+    padding: 0;
+    width: 100%;
+}
+
+.k-datepicker .k-picker-wrap.k-state-default{
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+.k-datetimepicker .k-picker-wrap.k-state-default {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    padding: 4.5px;
+}
+    .k-datepicker .k-picker-wrap.k-state-default input.form-control, .k-datetimepicker .k-picker-wrap.k-state-default input.form-control,.k-autocomplete input.form-control {
+        border: 0;
+        box-shadow: none;
+        font-weight: normal;
+    }
+
+.k-picker-wrap.k-state-default.k-state-hover {
+    background: none;
+    border: 1px solid #ccc;
+}
+
+    .k-picker-wrap.k-state-default.k-state-hover.k-state-focused {
+        border-color: #66afe9;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+
+.k-calendar .k-content .k-link {
+    font-weight: normal;
+}
+
+.k-state-selected.k-state-focused, .k-state-selected.k-state-highlight {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.k-picker-wrap.k-state-active {
+    box-shadow: none;
+}
+
+
+.table tr:nth-child(even) {
+    background: #f5f8fb;
+}
+
+.list-group-item:nth-of-type(odd) {
+    background: #f5f8fb !important;
+}
+
+.listgroup-controls button {
+    background: #f5f8fb !important;
+}
+
+/*Altered form validation customization*/
+  .k-tooltip-validation  {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    color: #FF0000 !important;
+}
+
+
+input.k-invalid, select.k-invalid,span.k-invalid {
+    border-color: #FF0000 !important;
+}
+
+    input.k-invalid:focus, select.k-invalid:focus, autocomplete.k-invalid:focus {
+        border-color: #66AFE9 !important;
+    }
+
+/*Altered for validation customization*/
+.k-tooltip {
+    position: absolute;
+    z-index: 1000;
+    border: none;
+    margin-top: 3px;
+    /*padding: 4px 5px 4px 6px;*/
+    background-repeat: repeat-x;
+    min-width: 20px;
+    text-align: center;
+    /*slider tooltip only*/
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+span.k-tooltip {
+    /*position: static;*/
+    /*padding: 2px 5px 1px 6px;*/
+    display: inline-block;
+}
+
+.k-tooltip {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    color: #f00 !important;
+}
+
+.k-tooltip-validation {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    color: #f00 !important;
+}
+
+.form-group {
+    margin-bottom: 25px !important; /*Altered for validation customization original value: 15px*/
+}
+
+
+
+.k-textbox {
+    display: block !important;
+    width: 100% !important;
+    height: 34px !important;
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: #555 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !important;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+}
+
+span.k-tooltip {
+    position: absolute !important;
+    display: inline-block;
+    border-width: 1px;
+    padding: 0 !important;
+}
+
+.k-state-selected {
+    background: #0082c8 !important;
+    border-color: #ddd !important;
+    color: #FFFFFF !important;
+}
+
+.k-alt.k-state-selected {
+    background: #0082c8 !important;
+    border-color: #ddd !important;
+    color: #FFFFFF !important;
+}
+
+
+.k-autocomplete.k-header, .k-autocomplete.k-state-focused {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.k-list-container {
+    border-color: #ffffff;
+    background-color: white;
+}
+
+.k-item.ng-scope {
+    font-weight: normal;
+}
+
+/*TODO: validation message template fix*/
+#ddlBusinessActivity + span {
+    margin-top: 11px;
+    margin-left: -7px;
+    font-weight: normal;
+}
+
+.k-picker-wrap.k-state-default > input + span.k-tooltip-validation {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.k-widget.k-datepicker.k-header.form-control,.k-widget.k-datetimepicker.k-header.form-control {
+    border: 0;
+}
+
+/*code is added to wrap the word so that it can fit in grid and grid table fit to header part */
+.k-grid .k-grid-header .k-header .k-link {
+    height: auto;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.k-grid .k-grid-header .k-header, .k-grid table tbody tr td {
+    white-space: normal;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+/*-------------------------------------------------------------------------*/
+.k-filter-help-text,
+.k-filter-menu .k-widget {
+    margin: .3em 0 .3em 0;
+    width: 100%;
+}
+
+.k-dropdown-wrap .k-input {
+    line-height: 1.0em !important;
+}
+
+.collapsing {
+    -moz-transition: all 0.45s ease;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+#divOptionIDTwoGrid,
+#divOptionIDOneGrid {
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.k-grid .k-edit-cell {
+    padding: 0 .3em;
+    vertical-align: middle;
+}
+
+span.k-widget.k-tooltip.k-tooltip-validation.k-invalid-msg {
+    box-shadow: none;
+    display:block;
+
+}
+
+ul.multiselect-container.dropdown-menu {
+    padding: 10px !important;
+}
+
+.multiselect-container  >  li  >  a  {
+    background: none;
+}
+
+.k-grid-content{margin-bottom:0px !important;}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+
+    .panel-overflow .k-grid.k-widget {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+
+/*anchor text visible if row selected in kendo grid*/
+.k-state-selected a, .k-state-selected a:hover {
+    color: #ffffff;
+}
+.multiselect-container.dropdown-menu {
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+}
+
+.k-grid-header th.k-header, .k-filter-row th{border-bottom:0}
+.k-grid.k-widget table thead{border-right:1px solid #ddd}
+.k-button {
+    background-color: #e3e3e3 !important;
+    border-bottom-color: #c5c5c5 !important;
+    border-left-color: #c5c5c5 !important;
+    border-right-color: #c5c5c5 !important;
+    border-top-color: #c5c5c5 !important;
+    color: #2e2e2e !important;
+    background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) !important;
+}
+.k-button:hover, .k-button.k-state-hover {
+    background-color: #bcb4b0 !important;
+    border-bottom-color: #bcb4b0 !important;
+    border-left-color: #bcb4b0 !important;
+    border-right-color: #bcb4b0 !important;
+    border-top-color: #bcb4b0 !important;
+    color: #2e2e2e !important;
+    background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) !important;
+}
+.k-dropdown-wrap{padding-bottom:0}
+.k-dropdown-wrap.k-state-default.k-state-active.k-state-border-down{ color: #111;background: #cbc5c2;box-shadow: none;border:#c5c5c5}
+.k-dropdown-wrap.k-state-default,.k-dropdown-wrap.k-state-default span.k-input,.k-widget.k-dropdown.k-header.k-state-border-down{color:#111111 !important}
+.k-widget.k-autocomplete input.form-control.k-input{ position: relative;top:-4px}
+.k-autocomplete.k-state-focused {
+    border:1px solid #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.k-datepicker .k-picker-wrap.k-state-default{padding:2px}
+.k-datepicker span.k-select{border:0}
+.k-icon.k-i-calendar{background:url("../Images/icon-calendar.png") 0 0;width: 17px;height: 17px;position: relative;top:-1px}
+.k-datepicker .k-picker-wrap.k-state-disabled{ background-image: none;background-color: #eee;padding:2px}
+.k-datepicker .k-picker-wrap.k-state-disabled .k-input{box-shadow:none}
+.k-datepicker{background:none !important}
+.k-animation-container, .k-widget, .k-widget *, .k-animation-container *, .k-widget *::before, .k-animation-container *::after, .k-block .k-header, .k-list-container {
+    box-sizing: border-box;
+}
+.k-button:focus:active:not(.k-state-disabled):not([disabled]),
+.k-primary:focus:active:not(.k-state-disabled):not([disabled]),
+.k-primary:focus:not(.k-state-disabled):not([disabled]),
+.k-button:focus:not(.k-state-disabled):not([disabled]){ box-shadow: none;}
+
+.modal-body ul.k-pager-numbers { padding: 0 !important; }
+
+.k-datepicker .k-picker-wrap.k-state-default { padding: 4.5px; }
+.k-datepicker .k-picker-wrap.k-state-disabled{ padding: 4.5px; }
+.k-datepicker .k-tooltip-validation.k-invalid-msg{clear:both;display: block;}
+.k-datepicker.k-invalid  .k-picker-wrap.k-state-default { border: 1px solid #f00; }
+.input-group .k-datepicker{ width: 100%; }
+.input-group .k-datepicker .k-picker-wrap { border-top-left-radius: 0;border-bottom-left-radius: 0; }
+
+/*Added for date picker invalid style*/
+span.k-numerictextbox{min-height:34px;}
+span.k-datepicker.k-invalid>span.k-picker-wrap.k-state-default{border-color:#ff0000}
+.k-numerictextbox .k-numeric-wrap.k-state-default{background:none}
+.k-numerictextbox .k-numeric-wrap.k-state-default.k-state-focused{border:1px solid #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);}
+.k-numerictextbox .k-numeric-wrap.k-state-default .k-select{border-left:0}
+
+.k-numerictextbox .k-numeric-wrap.k-state-default .k-link.k-state-selected{ background: none !important;opacity:.5}
+
+/*disabled datepicker style correction*/
+.k-picker-wrap{border-radius: 4px !important;padding: 0!important;height: 34px !important;background:#EEEEEE !important }
+.k-picker-wrap input{padding: 6px 9px !important;height: 32px !important;border-radius: 4px !important;}
+
+/*Remove red icon of kendo grid in editing grid row*/
+.k-grid td.k-dirty-cell span.k-dirty{
+    border-style:none;
+}
+/*Removes background box of validation message in grid editing and reduces left margin to make validation message similar to other validation messages*/
+.k-grid td div.k-tooltip {
+    background: none !important;
+    box-shadow: none !important;
+    margin: 2px 0 0 -5px !important;
+}
+
+/*Issue Id = 874*/
+.k-window-titlebar.k-header {
+    height:auto !important;    
+}
+
+.k-editor-dialog.k-popup-edit-form.k-edit-form-container.k-viewhtml-dialog.k-window-content.k-content{
+    padding-top:0px !important;
+}
+
+/*TO Remove Arrow Mark in Kendo Numeric textbox*/
+.currencyDirective span.k-select{
+    display:none;
+}
+
+/*Issue Id = 1172*/
+.form-control.k-invalid[disabled] {
+    border-color: #ccc !important;
+}

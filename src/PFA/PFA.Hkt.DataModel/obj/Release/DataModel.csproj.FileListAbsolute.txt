@@ -1,0 +1,17 @@
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\obj\Release\DataModel.csprojResolveAssemblyReference.cache
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\obj\Release\DataModel.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\obj\Release\DataModel.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\DataModel.dll.config
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\DataModel.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\DataModel.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\EntityFramework.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\EntityFramework.SqlServer.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Resolver.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Microsoft.Practices.Unity.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\EntityFramework.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\EntityFramework.SqlServer.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Microsoft.Practices.ServiceLocation.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Resolver.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\DataModel\bin\Microsoft.Practices.Unity.xml

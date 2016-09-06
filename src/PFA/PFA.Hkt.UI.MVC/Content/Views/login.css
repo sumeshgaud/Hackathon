@@ -1,0 +1,157 @@
+/* CSS Document */
+.navbar{
+	background:#f6f6f6;
+	border-bottom:1px solid #dbdbdb;
+}
+.top-menu {
+	margin-top: 30px;
+}
+.page-header-login{
+	text-align:center;
+	padding:10px 140px 20px;
+	background:url('../../Content/Images/login-page-header-line.png') no-repeat center bottom;
+	margin:0;
+}
+.page-header-login h1{
+	color:#269ada;
+	font-size:24px;
+	font-weight:bold;
+}
+.page-header-login p{
+	color:#c7c7c7;
+	font-size:18px;
+}
+.login-info-graphic{
+	text-align:center;
+	margin-top:20px;
+}
+.login-info-graphic h2{
+	font-size:18px;
+	font-weight:bold;
+	color:#464646;
+}
+.login-form {
+	background:#f6f6f6;
+	border:1px solid #d9d9d9;
+	margin:20px 0;
+	border-radius:5px;
+}
+.login-form h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+	color:#464646;
+}
+.icon-admin {
+	background: url("../../Content/images/sprite-login.png") no-repeat 7px -132px;
+	display: block;
+	height: 135px;
+	margin: 20px auto;
+	width: 135px;
+}
+.icon-employee {
+	background: url("../../Content/images/sprite-login.png") no-repeat 7px -269px;
+	display: block;
+	height: 135px;
+	margin: 20px auto;
+	width: 135px;
+}
+.icon-employer {
+	background: url("../../Content/images/sprite-login.png") no-repeat 7px 5px;
+	display: block;
+	height: 135px;
+	margin: 20px auto;
+	width: 135px;
+}
+.icon-admin-active{
+	background: url("../../Content/images/sprite-login-active.png") repeat 0 -139px;
+}
+.icon-employee-active{
+	background: url("../../Content/images/sprite-login-active.png") repeat 0 -276px;
+}
+.icon-employer-active {
+	background: url("../../Content/images/sprite-login-active.png") repeat 0 -2px;
+}
+.login-form .additional-details-filter{
+	margin-bottom:10px;
+}
+.login-info-graphic .icon-admin,	
+.login-info-graphic .icon-employer,	
+.login-info-graphic .icon-employee{	
+	cursor:pointer;
+}
+.section-1,
+.section-3{
+	position:relative;
+	padding-top:220px;
+}
+.arc-left {
+	background: url("../../Content/images/login-arc-left.png") no-repeat ;
+	height: 138px;
+	left: 130px;
+	position: absolute;
+	top: 74px;
+	width: 142px;
+}
+.arc-right {
+	background: url("../../Content/images/login-arc-right.png") no-repeat ;
+	height: 138px;
+	left: -20px;
+	position: absolute;
+	top: 74px;
+	width: 142px;
+}
+.forgot-link{
+	color:#6c6b6b;
+	text-decoration:underline;
+	border-right:1px solid #6c6b6b;
+	padding-right:5px;
+}
+.forgot-link:hover{
+	text-decoration:none;
+}
+.forgot-link+.forgot-link{
+	border-right:0;
+}
+.login-link{
+	margin:10px 0;
+}
+.register-link{
+	margin-bottom:5px;
+	font-size:16px;
+}
+.login-info-graphic-splash{
+	margin:20px auto 0;
+	float:none;
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) /*MD Medium desktop*/ {
+	.arc-right{left:-20px;top:74px;z-index:-1}
+.arc-left{left:80px;top:76px;z-index:-1}
+.additional-details-filter1 .btn-group label.btn{padding:6px}
+}
+@media (min-width: 768px) and (max-width: 991px) /*SM - Tablet*/ {
+	.arc-right{left:-38px;top:110px;z-index:-1}
+.arc-left{left:84px;top:110px;z-index:-1}
+.additional-details-filter1 .btn-group label.btn{width:100%;border-radius:3px !important;transition:all .5s;margin-bottom:5px}
+
+}
+@media (max-width: 767px) /*XS Extra Small Device*/ {
+.login-info-graphic{display:block;overflow:hidden}
+.arc-right{display:none}
+.arc-left{display:none}
+.section-1, .section-3{padding-top:0}
+.section-1,.section-2, .section-3{width:33%;float:left;transition:all .5s;display:block}
+
+}
+@media (min-width: 320px) and (max-width: 480px) /*320 to 480*/ {
+	.login-info-graphic{margin-top:0}
+	.additional-details-filter1 .btn-group label.btn{width:100%;border-radius:3px !important;transition:all .5s;margin-bottom:5px}
+	.section-1,.section-2, .section-3{width:100%;float:none;margin:50px 0}
+	.login-info-graphic h2{margin-top:0}
+	.login-info-graphic .icon-admin, .login-info-graphic .icon-employer, .login-info-graphic .icon-employee{margin-bottom:0}
+}

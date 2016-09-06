@@ -1,0 +1,16 @@
+a.txt
+Default
+fonts
+images
+kendo.bootstrap.min.css
+kendo.bootstrap.mobile.min.css
+kendo.common-bootstrap.core.min.css
+kendo.common-bootstrap.min.css
+kendo.common-material.core.min.css
+kendo.common-material.min.css
+kendo.common.core.min.css
+kendo.common.min.css
+kendo.default.min.css
+kendo.default.mobile.min.css
+textures
+Uniform

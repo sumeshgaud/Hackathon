@@ -1,0 +1,269 @@
+﻿@{
+    ViewBag.Title = "Overview";
+    ViewBag.Menu = "Home";
+}
+@section styles{
+
+}
+
+
+<script type="text/javascript" src="~/Scripts/Feature/Dashboard/apha.dashboard.chart.js"></script>
+
+
+@Html.Partial("_HeaderPartial")
+
+<div class="container theme-showcase margin-bottom">
+    <div class="in row">
+        <div class="col-sm-12">
+            <div class="col-sm-4">
+                <h3>Accounts details</h3>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Cash
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <span>Credit 1</span><span class="pull-right">Details</span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Credit 1</span><span class="pull-right">Details</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Credit cards
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <span>Credit 1</span><span class="pull-right">Details</span>
+                                </div>
+                                <div class="form-group">
+                                    <span>Credit 1</span><span class="pull-right">Details</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Loans
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>Ist account</p>
+                                <p>IIst account</p>
+                                <p>IIIst account</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseThree">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Can I use special characters?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Please use only letters, numbers, spaces and hyphens in your answers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 info-table">
+                <div class="chart-block margin-top margin-bottom">
+                    <div class="form-group clearfix top-padding border-bottom">
+                        <div class="ym-g960-2 pull-left">
+                            <label class="text-align-right">
+                                <strong>Chart Type - </strong>
+                            </label>
+                        </div>
+                        <div class="pull-left left-margin">
+                            <div class="pull-left chart-type selected border" data-chart-type="Pie2D">
+                                <a style="width: 48px; height: 48px; padding: 2px; display: inline-block">
+                                    <img alt="Pie3D" title="Pie Chart" src="@Url.Content("~/Content/Images/chart-pie.png")" />
+                                </a>
+                            </div>
+                            <div class="pull-left left-margin chart-type border" data-chart-type="Column2D">
+                                <a style="width: 48px; height: 48px; padding: 2px; display: inline-block">
+                                    <img alt="Column3D" title="Bar Chart" src="@Url.Content("~/Content/Images/chart-bar.png")" />
+                                </a>
+                            </div>
+                            <div class="pull-left left-margin chart-type border" data-chart-type="Line">
+                                <a style="width: 48px; height: 48px; padding: 2px; display: inline-block">
+                                    <img alt="Line" title="Line Chart" src="@Url.Content("~/Content/Images/chart-line.png")" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="col-sm-6">
+                        <div id="expense_chart_container" style="height: 290px">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div id="budget_chart_container" style="height: 290px">
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="alert-box">
+                    <div class="span12 header-section">
+                        <h3>
+                            Alerts
+
+                            <a href="edit_client.html" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-repeat"></span>Add Alert</a>
+                        </h3>
+
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class="alert alert-error">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Danger! 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore dignissimos repellendus repudiandae. Quod, eius cupiditate repellendus repudiandae repellat.</p>
+                    </div>
+
+                    <div class="alert alert-error">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Danger! 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore dignissimos repellendus repudiandae. Quod, eius cupiditate repellendus repudiandae repellat.</p>
+                    </div>
+                </div>
+
+                <div class="budget-box">
+                    <div class="span12 header-section">
+                        <h3>
+                            Budget
+
+                            <a href="edit_client.html" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-repeat"></span>Add Budget</a>
+                        </h3>
+
+
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <table cellspacing="0" cellpadding="0" border="0" class="table-grid spanX budget-table-home">
+                        <tbody>
+                            <tr>
+                                <th><a href="#"></a></th>
+                                <th colspan="2" class="budget-bar"><a href="#"><div class="pull-left">0%</div><div class="pull-right">100%</div></a></th>
+                                <th><a href="#">Budget</a></th>
+                                <th><a href="#">Left</a></th>
+                            </tr>
+                            <tr>
+                                <td>Groceries</td>
+                                <td colspan="2">
+                                    <div class="progress">
+                                        <div class="bar" style="width: 60%;"><span class="pull-right">150 Rs</span></div>
+                                    </div>
+                                </td>
+                                <td>250 Rs</td>
+                                <td>100 Rs left</td>
+
+                            </tr>
+                            <tr>
+                                <td>Credit card payment</td>
+                                <td colspan="2"><div class="progress"> <div class="bar" style="width: 20%;"><span class="pull-right">50 Rs</span></div></div></td>
+                                <td>300 Rs</td>
+                                <td>250 Rs left</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Total</a></td>
+                                <td colspan="2"><div class="progress"> <div class="bar" style="width: 40%;"><span class="pull-right">200 Rs</span></div></div></td>
+                                <td>550 Rs</td>
+                                <td>350 Rs left</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                </div>
+
+
+                <div class="Goal-box">
+                    <div class="span12 header-section">
+                        <h3>
+                            Goals
+
+                            <a href="edit_client.html" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-repeat"></span>Add Goal</a>
+                        </h3>
+
+
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <table cellspacing="0" cellpadding="0" border="0" class="table-grid spanX budget-table-home">
+                        <tbody>
+                            <tr>
+                                <th><a href="#">Name</a></th>
+                                <th colspan="2" class="budget-bar"><a href="#"><div class="pull-left">0%</div><div class="pull-right">100%</div></a></th>
+                                <th><a href="#">Goal</a></th>
+                                <th><a href="#">Left</a></th>
+                            </tr>
+                            <tr>
+                                <td>Buy a car</td>
+                                <td colspan="2">
+                                    <div class="progress">
+                                        <div class="bar" style="width: 60%;"><span class="pull-right">150 Rs</span></div>
+                                    </div>
+                                </td>
+                                <td>250 Rs</td>
+                                <td>100 Rs left</td>
+
+                            </tr>
+                            <tr>
+                                <td>Buy home</td>
+                                <td colspan="2"><div class="progress"> <div class="bar" style="width: 20%;"><span class="pull-right">50 Rs</span></div></div></td>
+                                <td>300 Rs</td>
+                                <td>250 Rs left</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Total</a></td>
+                                <td colspan="2"><div class="progress"> <div class="bar" style="width: 40%;"><span class="pull-right">200 Rs</span></div></div></td>
+                                <td>550 Rs</td>
+                                <td>350 Rs left</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

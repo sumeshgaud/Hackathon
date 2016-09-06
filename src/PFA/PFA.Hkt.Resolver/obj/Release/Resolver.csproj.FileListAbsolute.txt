@@ -1,0 +1,13 @@
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Resolver.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Resolver.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.Unity.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Unity.Mvc3.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.ServiceLocation.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.Unity.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\obj\Release\Resolver.csprojResolveAssemblyReference.cache
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\obj\Release\Resolver.dll
+E:\Vishal\POC\Hackathon\Hackathon_TR\Resolver\obj\Release\Resolver.pdb

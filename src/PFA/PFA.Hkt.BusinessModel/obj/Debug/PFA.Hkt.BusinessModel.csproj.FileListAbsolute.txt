@@ -1,0 +1,16 @@
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\BusinessModel.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\BusinessModel.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\AutoMapper.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\EntityFramework.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\AutoMapper.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\DataModel.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Resolver.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\EntityFramework.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\obj\Debug\PFA.Hkt.BusinessModel.csprojResolveAssemblyReference.cache
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.pdb

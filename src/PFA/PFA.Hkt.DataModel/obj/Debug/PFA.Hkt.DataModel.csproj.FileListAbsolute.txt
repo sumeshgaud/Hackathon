@@ -1,0 +1,16 @@
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\DataModel.dll.config
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\DataModel.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\DataModel.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\EntityFramework.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\EntityFramework.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Resolver.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\PFA.Hkt.DataModel.csprojResolveAssemblyReference.cache
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.pdb

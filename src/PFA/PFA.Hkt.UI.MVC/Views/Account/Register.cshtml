@@ -1,0 +1,281 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+@section scripts{
+    <script type="text/javascript">
+        var ROOT = '@Url.Content("~/")';
+        var response = {};
+        
+    </script>
+    <script type="text/javascript" src="~/Scripts/Feature/Register.js"></script>
+}
+@section styles{
+    <style>
+        .lblFontWeight {
+            font-weight: 500;
+        }
+
+        .mandatory-fields {
+            padding: 0;
+        }
+
+        .addMarginLeft {
+            margin-left: 10px !important;
+        }
+    </style>
+
+<link href="@Url.Content("~/Content/Common/site.css")" rel="stylesheet" />
+}
+<div class="container theme-showcase" role="main" data-ng-controller="RegisterCtrl" data-ng-init="init()">
+    @Html.Partial("_Status")
+
+    <div class=" page-header">
+        <h1>Create Your Account</h1>
+        <p>
+            Please complete this form to register as a user or
+            <a href="@Url.Content("~/ContactUs/Index")" target="_blank">contact us</a> with any questions.
+        </p>
+    </div>
+    <div class="in row">
+        <div class="col-sm-12">
+            <div class="col-sm-8">
+                <form id="frmRegister" novalidate="novalidate">
+                    <div class="panel panel-primary panel-form clearfix col-sm-12">
+                        <p class="mandatory-fields"><span class="mandatory">*</span> - Indicates a required field</p>
+                        <div class="form-group">
+                            <label for="txtFirst">First Name: <span class="mandatory">*</span></label>
+                            <input name="txtFirst"
+                                   id="txtFirst"
+                                   type="text"
+                                   class="form-control"
+                                   ng-model="registrationDetails.Firstname"
+                                   required
+                                   maxlength="205"
+                                   data-required-msg="Enter firstname">
+                            <span class="k-invalid-msg" data-for="txtFirst"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtLast">Last Name: <span class="mandatory">*</span></label>
+                            <input name="txtLast"
+                                   id="txtLast"
+                                   type="text"
+                                   class="form-control"
+                                   ng-model="registrationDetails.Lastname"
+                                   required
+                                   maxlength="205"
+                                   data-required-msg="Enter lastname">
+                            <span class="k-invalid-msg" data-for="txtLast" ></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtUsername">Username: </label>
+                            <span class="mandatory">*</span>
+                            <input name="txtUsername"
+                                   id="txtUsername"
+                                   type="text"
+                                   class="form-control"
+                                   ng-model="registrationDetails.Username"
+                                   maxlength="205"
+                                   required                                   
+                                   data-required-msg="Enter username">
+                            <span class="k-invalid-msg" data-for="txtUsername" id="spnUsername"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmailAddress">E-mail Address: <span class="mandatory">*</span></label>
+                            <input name="txtEmailAddress"
+                                   id="txtEmailAddress"
+                                   type="text"
+                                   class="form-control"
+                                   ng-model="registrationDetails.Email"
+                                   required
+                                   maxlength="205"                                   
+                                   data-required-msg="Enter email address">
+                            <span class="k-invalid-msg" data-for="txtEmailAddress" id="spnEmailAddress"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Password: <span class="mandatory">*</span></label>
+                            <input name="txtPassword"
+                                   id="txtPassword"
+                                   type="password"
+                                   class="form-control"
+                                   ng-model="registrationDetails.Password"
+                                   required
+                                   maxlength="20"
+                                   ng-change="validatePasswordFields()"
+                                   data-required-msg="Enter password" />
+                            <span class="k-invalid-msg" data-for="txtPassword"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtConfirmPassword">Confirm Password: <span class="mandatory">*</span></label>
+                            <input name="txtConfirmPassword"
+                                   id="txtConfirmPassword"
+                                   type="password"
+                                   class="form-control"
+                                   ng-model="registrationDetails.ConfirmPassword"
+                                   maxlength="20"
+                                   required
+                                   data-required-msg="Enter confirm password" />
+                            <span class="k-invalid-msg" data-for="txtConfirmPassword"></span>
+                        </div>
+                        <p>
+                            Fill your permanent address details below.
+                        </p>
+                        <div class="form-group">
+                            <label for="ddlSecQuest1">Address 1<span class="mandatory">*</span></label>
+                            <input name="txtAnswer1"
+                                   id="txtAnswer1"
+                                   type="text"
+                                   class="form-control"
+                                   required />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAnswer1">Address 2<span class="mandatory">*</span></label>
+                            <input name="txtAnswer1"
+                                   id="txtAnswer1"
+                                   type="text"
+                                   class="form-control"
+                                   required />
+                        </div>
+                        <div class="form-group">
+                            <label for="ddlSecQuest2">Address 3<span class="mandatory">*</span></label>
+                            <input name="txtAnswer1"
+                                   id="txtAnswer1"
+                                   type="text"
+                                   class="form-control"
+                                   required />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAnswer2">City<span class="mandatory">*</span></label>
+                            <input name="txtAnswer2"
+                                   id="txtAnswer2"
+                                   type="text"
+                                   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="ddlSecQuest3">Phone number<span class="mandatory">*</span></label>
+                            <input name="txtAnswer1"
+                                   id="txtAnswer1"
+                                   type="text"
+                                   class="form-control"
+                                   required />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAnswer3">Mobile number<span class="mandatory">*</span></label>
+                            <input name="txtAnswer3"
+                                   id="txtAnswer3"
+                                   type="text"
+                                   class="form-control">
+                        </div>
+                        @*<div class="form-group">
+                                @Html.Captcha(5, "Captcha")
+                            </div>
+                            <div class="form-group">
+                                <input name="chkAgree"
+                                       id="chkAgree"
+                                       type="checkbox"
+                                       ng-disabled="isDisabled"
+                                       required
+                                       >
+                                <label for="chkAgree"
+                                       class="lblFontWeight">
+                                    &nbsp;I have read and agree to be bound by the <a href="#" data-toggle="modal" data-target="#myModalTerms">Terms and Conditions</a> and <a href="#" data-toggle="modal" data-target="#myModalPrivacy" title="Privacy Policy">Privacy Policy</a>.
+                                    <br /><span class="k-invalid-msg" data-for="chkAgree"></span>
+                                </label>
+                            </div>*@
+                    </div>
+
+                    <div class="panel panel-primary col-sm-12">
+                        <div class="panel-body">
+
+                            <button type="button"
+                                    class="btn btn-primary pull-left"
+                                    ng-click="cancel()">
+                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                            </button>
+
+                            <button type="submit"
+                                    class="btn btn-primary pull-right addMarginLeft"
+                                    ng-click="validateSubmit()">
+                                <span class="glyphicon glyphicon-ok"></span> Submit
+                            </button>
+
+                            <button type="button"
+                                    class="btn btn-primary pull-right"
+                                    ng-click="clear()">
+                                <span class="glyphicon glyphicon-refresh"></span> Clear
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <form id="loginForm" action="@Url.Content("~/Account/Login")" method="POST">
+                    <input type="hidden" name="selectedUserType" id="selectedUserType" value="" />
+                    <input type="hidden" name="userName" id="userName" value="" />
+                    <input type="hidden" name="password" id="password" value="" />
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Password
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>* 8 - 20 characters</p>
+                                <p>* No spaces or invalid symbols</p>
+                                <p>* 1 number, 1 letter</p>
+                                <p>* Not same as Username</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="glyphicon glyphicon-info-sign"></span>How security questions used?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Security questions help protect your online account. If you lose your username or password we can use your security questions and answers to help us verify it's you trying to log in to your account.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Are answers case-sensitive?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                No, answers are not case-sensitive. Answers with or without capitalization are ok. Just create answers that are unique so you'll remember.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="glyphicon glyphicon-info-sign"></span>Can I use special characters?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Please use only letters, numbers, spaces and hyphens in your answers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

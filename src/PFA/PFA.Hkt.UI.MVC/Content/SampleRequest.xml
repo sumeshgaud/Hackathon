@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<EmployerRatesRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AgentNumber />
+  <CountyCode>17031</CountyCode>
+  <CountyName>Cook</CountyName>
+  <EffectiveDate>2015-06-02T00:00:00</EffectiveDate>
+  <MarketSegment>SG</MarketSegment>
+  <Members>
+    <QuoteMember>
+      <Address1>dfgd</Address1>
+      <Address2 />
+      <AnnualSalary>0</AnnualSalary>
+      <City>dfgdfg</City>
+      <CountyCode>17031</CountyCode>
+      <CountyName>Cook</CountyName>
+      <CoverageType>EO</CoverageType>
+      <DateOfBirth>2010-03-09T00:00:00</DateOfBirth>
+      <Email>asdfsdf@asdfji.com</Email>
+      <FirstName>asdasd</FirstName>
+      <Gender>Female</Gender>
+      <JobClassName>FullTime</JobClassName>
+      <LastName>asdas</LastName>
+      <RelationshipType>Primary</RelationshipType>
+      <SequenceNumber>1</SequenceNumber>
+      <Smoking>false</Smoking>
+      <StateCode>IL</StateCode>
+      <ZipCode>60018</ZipCode>
+    </QuoteMember>
+  </Members>
+  <Plans>
+    <Plan>
+      <Name>Blue Choice Silver PPO 003</Name>
+      <Number>SPS048BCSSILO</Number>
+      <PlanType>Dental</PlanType>
+    </Plan>
+  </Plans>
+  <ProspectName>Acer</ProspectName>
+  <StateCode>IL</StateCode>
+  <VendorGroupQuoteId />
+  <VendorProspectId />
+  <ZipCode>60018</ZipCode>
+</EmployerRatesRequest>

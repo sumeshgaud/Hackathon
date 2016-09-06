@@ -1,0 +1,13 @@
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.pdb
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Unity.Mvc3.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\obj\Debug\PFA.Hkt.Resolver.csprojResolveAssemblyReference.cache
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.dll
+D:\Hackathon\New folder\pecuniary\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.pdb

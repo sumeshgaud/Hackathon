@@ -1,0 +1,225 @@
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Hackathon_TR.Tests.dll.config
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Hackathon_TR.Tests.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Hackathon_TR.Tests.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\BusinessModel.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Hackathon_TR.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Http.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Razor.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Unity.Mvc3.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Resolver.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\DataModel.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\AutoMapper.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\EntityFramework.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Hackathon_TR.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\BusinessModel.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Http.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.Razor.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Resolver.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\DataModel.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\AutoMapper.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\bin\Debug\EntityFramework.xml
+E:\Technical\Work\Latest\Hackathon_TR.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+E:\Technical\Work\Latest\Hackathon_TR.Tests\obj\Debug\Hackathon_TR.Tests.dll
+E:\Technical\Work\Latest\Hackathon_TR.Tests\obj\Debug\Hackathon_TR.Tests.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Hackathon_TR.Tests.dll.config
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Hackathon_TR.Tests.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Hackathon_TR.Tests.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Hackathon_TR.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Http.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Unity.Mvc3.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Resolver.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\DataModel.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\AutoMapper.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\EntityFramework.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Hackathon_TR.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\BusinessModel.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Http.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\DataModel.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\AutoMapper.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\bin\Debug\EntityFramework.xml
+E:\Technical\Work\Latest\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+E:\Technical\Work\Latest\PFA.Hkt.Tests\obj\Debug\Hackathon_TR.Tests.dll
+E:\Technical\Work\Latest\PFA.Hkt.Tests\obj\Debug\Hackathon_TR.Tests.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll.config
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Unity.Mvc3.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Resolver.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\DataModel.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\AutoMapper.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\EntityFramework.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\BusinessModel.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\DataModel.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\AutoMapper.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\bin\Debug\EntityFramework.xml
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.dll
+E:\Office\Hackathon\Latest\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll.config
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Unity.Mvc3.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\DataModel.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\AutoMapper.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\EntityFramework.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\BusinessModel.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\DataModel.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\AutoMapper.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\bin\Debug\EntityFramework.xml
+D:\Hackathon\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+D:\Hackathon\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll.config
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Unity.Mvc3.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\DataModel.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\AutoMapper.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\EntityFramework.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\BusinessModel.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\DataModel.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\AutoMapper.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\bin\Debug\EntityFramework.xml
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.pdb

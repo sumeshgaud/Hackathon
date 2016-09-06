@@ -5,6 +5,7 @@ using System.Linq;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration;
+using DataModel;
 
 namespace DataModel
 {
@@ -31,7 +32,26 @@ namespace DataModel
             base.OnModelCreating(modelBuilder); 
         }
 
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<TravelPlan> TravelPlans { get; set; }
+      
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<AuthInfo> AuthInfos { get; set; }
+        public DbSet<Bank> Banks { get; set; }
+        public DbSet<Budget> Budgets { get; set; }
+        public DbSet<BudgetDetail> BudgetDetails { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Currency> Currencies { get; set; }
+        public DbSet<Goal> Goals { get; set; }
+        public DbSet<RecurTransaction> RecurTransactions { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<User> Users { get; set; }
+       
+
+
+
+
+
+
+
     }
 }

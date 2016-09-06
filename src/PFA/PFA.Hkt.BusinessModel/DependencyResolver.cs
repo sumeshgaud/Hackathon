@@ -9,7 +9,7 @@ namespace BusinessModel
     {
         public void SetUp(IRegisterComponent registerComponent)
         {
-            registerComponent.RegisterType<IEmployeeService, EmployeeService>();
+            registerComponent.RegisterType<ITransactionService, TransactionService>();
 
         }
     }

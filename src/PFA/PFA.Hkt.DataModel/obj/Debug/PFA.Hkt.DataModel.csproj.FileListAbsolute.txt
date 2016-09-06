@@ -14,3 +14,19 @@ D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\bin\Debug\Micro
 D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\PFA.Hkt.DataModel.csprojResolveAssemblyReference.cache
 D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.dll
 D:\Hackathon\Alpha Pecuniary\pecuniary\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.pdb
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\PFA.Hkt.DataModel.csprojResolveAssemblyReference.cache
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.pdb
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.dll.config
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.pdb
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.SqlServer.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.Unity.dll
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.xml
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.SqlServer.xml
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.xml
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Resolver.pdb
+E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.Unity.xml

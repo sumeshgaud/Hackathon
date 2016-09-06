@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,8 +33,9 @@
     <Reference Include="AutoMapper">
       <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="DataModel">
-      <HintPath>..\DataModel\bin\Debug\DataModel.dll</HintPath>
+    <Reference Include="DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PFA.Hkt.DataModel\bin\DataModel.dll</HintPath>
     </Reference>
     <Reference Include="Resolver">
       <HintPath>..\Resolver\bin\Debug\Resolver.dll</HintPath>
@@ -50,11 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessEntity\beAccount.cs" />
+    <Compile Include="BusinessEntity\beAuthInfo.cs" />
+    <Compile Include="BusinessEntity\beBank.cs" />
     <Compile Include="BusinessEntity\beBaseEntity.cs" />
-    <Compile Include="BusinessEntity\beEmployee.cs" />
-    <Compile Include="BusinessEntity\beTravelPlan.cs" />
-    <Compile Include="BusinessRepository\EmployeeService.cs" />
-    <Compile Include="BusinessRepository\IEmployeeService.cs" />
+    <Compile Include="BusinessEntity\beBudget.cs" />
+    <Compile Include="BusinessEntity\beBudgetDetail.cs" />
+    <Compile Include="BusinessEntity\beCategory.cs" />
+    <Compile Include="BusinessEntity\beCurrency.cs" />
+    <Compile Include="BusinessEntity\beGoal.cs" />
+    <Compile Include="BusinessEntity\beRecurTransaction.cs" />
+    <Compile Include="BusinessEntity\beTransaction.cs" />
+    <Compile Include="BusinessEntity\beUser.cs" />
+    <Compile Include="BusinessRepository\ITransactionService.cs" />
+    <Compile Include="BusinessRepository\TransactionService.cs" />
     <Compile Include="DependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

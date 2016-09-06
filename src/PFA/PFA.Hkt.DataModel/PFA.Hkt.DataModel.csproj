@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -54,11 +54,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBEntity\Account.cs" />
+    <Compile Include="DBEntity\AuthInfo.cs" />
+    <Compile Include="DBEntity\Bank.cs" />
     <Compile Include="DBEntity\BaseEntity.cs" />
-    <Compile Include="DBEntity\Employee.cs" />
-    <Compile Include="DBEntity\TravelPlan.cs" />
-    <Compile Include="DBMapping\EmployeeMap.cs" />
-    <Compile Include="DBMapping\TravelMap.cs" />
+    <Compile Include="DBEntity\Budget.cs" />
+    <Compile Include="DBEntity\BudgetDetail.cs" />
+    <Compile Include="DBEntity\Category.cs" />
+    <Compile Include="DBEntity\Currency.cs" />
+    <Compile Include="DBEntity\Goal.cs" />
+    <Compile Include="DBEntity\RecurTransaction.cs" />
+    <Compile Include="DBEntity\Transaction.cs" />
+    <Compile Include="DBEntity\User.cs" />
+    <Compile Include="DBMapping\AccountMap.cs" />
+    <Compile Include="DBMapping\AuthInfoMap.cs" />
+    <Compile Include="DBMapping\BankMap.cs" />
+    <Compile Include="DBMapping\BudgetDetailMap.cs" />
+    <Compile Include="DBMapping\BudgetMap.cs" />
+    <Compile Include="DBMapping\CategoryMap.cs" />
+    <Compile Include="DBMapping\CurrencyMap.cs" />
+    <Compile Include="DBMapping\GoalMap.cs" />
+    <Compile Include="DBMapping\RecurTransactionMap.cs" />
+    <Compile Include="DBMapping\TransactionMap.cs" />
+    <Compile Include="DBMapping\UserMap.cs" />
     <Compile Include="DependencyResolver.cs" />
     <Compile Include="GenericRepository\GenericRepository.cs" />
     <Compile Include="EntityDataContext.cs" />

@@ -153,6 +153,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BudgetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -446,6 +447,7 @@
     <Content Include="Views\Shared\_Status.cshtml" />
     <Content Include="Views\Shared\_SideLayout.cshtml" />
     <Content Include="Views\Budget\Index.cshtml" />
+    <Content Include="Views\Setting\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

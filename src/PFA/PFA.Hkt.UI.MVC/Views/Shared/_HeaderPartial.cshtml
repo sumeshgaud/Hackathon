@@ -18,7 +18,7 @@
                     <a href="#">Investments</a>
                 </li>
                 <li class="@(ViewBag.Menu == "Setting" ? "selected" : "")">
-                    <a href="#">Setting</a>
+                    <a href="@Url.Action("Index", "Setting")">Setting</a>
                 </li>
             </ul>
         </div>

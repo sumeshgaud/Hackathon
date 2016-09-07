@@ -25,6 +25,7 @@ namespace PFA.Hkt.UI.MVC.WebApi
         // GET api/<controller>/5
         public string GetAccounts()
         {
+
             return "value";
         }
 

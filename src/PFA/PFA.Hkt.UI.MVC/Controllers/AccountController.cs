@@ -48,8 +48,13 @@ namespace PFA.Hkt.UI.MVC.Controllers
             return View();
         }
 
+         [HttpPost]
         public ActionResult SubmitRegistration(beUser registrationViewModel)
         {
+            registrationViewModel.CreatedBy = User.Identity.Name;
+            registrationViewModel.CreatedOn = DateTime.Now;
+            registrationViewModel.ModifiedOn = DateTime.Now;
+            registrationViewModel.CreatedBy = User.Identity.Name;
             Guid userId = _userService.CreateUser(registrationViewModel);
             if (userId != null)
                 return RedirectToAction("Login");

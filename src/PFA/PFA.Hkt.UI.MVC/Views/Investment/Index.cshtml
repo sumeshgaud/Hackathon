@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Investment";
+    ViewBag.Menu = "Investment";
+}
+@section styles{
+
+}
+
+
+@*<script type="text/javascript" src="~/Scripts/Feature/Budget/apha.budget.js"></script>*@
+
+
+@Html.Partial("_HeaderPartial")
+
+<div class="container theme-showcase margin-bottom">
+    <div class="in row">
+        <div class="col-sm-12">
+
+            @Html.Partial("_SideLayout")
+
+            <div class="container">
+                <h2>Financial Goal</h2>
+                <div class="panel panel-default">
+                    <div class="panel-heading"><b>Calculator</b></div>
+                    <div class="panel-body">
+                        <table>
+                            <tr>
+                                <th>
+                                    <div class="form-group">
+                                        <label for="fga">Goal Amount:</label>
+                                        <input type="text" class="form-control" id="fga" style="width:50%">
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="high-risk">High Risk Portfolio Percentage  (in %):</label>
+                                        <input type="text" class="form-control" id="high-risk" style="width:50%">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="medium-risk">Medium Risk Portfolio Percentage  (in %):</label>
+                                        <input type="text" class="form-control" id="medium-risk" style="width:50%">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="low-risk">Low Risk Portfolio Percentage  (in %):</label>
+                                        <input type="text" class="form-control" id="low-risk" style="width:50%">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="interest-range">Interest Range (in %):</label>
+                                        <input type="text" class="form-control" id="interest-range-from1" style="width:20%" placeholder="From"><br>
+                                        <input type="text" class="form-control" id="interest-range-to1" style="width:20%" placeholder="To">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="interest-range">Interest Range (in %):</label>
+                                        <input type="text" class="form-control" id="interest-range-from2" style="width:20%" placeholder="From"><br>
+                                        <input type="text" class="form-control" id="interest-range-to2" style="width:20%" placeholder="To">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="interest-range">Interest Range (in %):</label>
+                                        <input type="text" class="form-control" id="interest-range-from3" style="width:20%" placeholder="From"><br>
+                                        <input type="text" class="form-control" id="interest-range-to3" style="width:20%" placeholder="To">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning pull-right" style="width:50%">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

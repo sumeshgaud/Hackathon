@@ -1,9 +1,9 @@
 ﻿@{
     ViewBag.Title = "Transaction";
     ViewBag.Menu = "Transaction";
-    
-}
 
+}
+<script type="text/javascript" src="~/Scripts/lib/Telerik/kendo.web.ext.js"></script>
 <script type="text/javascript" src="~/Scripts/Feature/Transaction/alpha.transaction.js"></script>
 
 @Html.Partial("_HeaderPartial")
@@ -16,6 +16,13 @@
 
             <div class="col-sm-8">
 
+                <div class="form-group">
+                    <label for="txtFirst">Filter by account: </label>
+
+                    <span class="k-invalid-msg" data-for="txtFirst"></span>
+                </div>
+
+
                 <table id="TransactionGrid" class="table k-grid-content" style="margin-bottom:8px;"> </table>
                 <span style="cursor:default"
                       class="btn btn-default pull-left pagination-arrow"
@@ -25,7 +32,88 @@
                 </span>
 
             </div>
+
+
+
+
+            @*<div id="dropDownTreeView">
+                </div>*@
         </div>
+
+
     </div>
 
+
+
+    <div class="modal fade" id="myModalTerms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Transaction Edit</h4>
+                </div>
+                <div class="modal-body">
+                        <div >
+                            <div class="form-group">
+                                <label for="txtNotes">Details : <span class="mandatory">*</span></label>
+
+                                <label class="form-control labelDisable">comming soon to move 134 in shopping.</label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtNotes">Notes : <span class="mandatory">*</span></label>
+
+                                <textarea name="txtNotes" class="form-control" id="txtNotes" ></textarea>
+                                <span class="k-invalid-msg" data-for="txtNotes"></span>
+                            </div>
+                        </div>
+
+                    <div class="clearfix">
+                          <button class="btn btn-primary pull-left" ng-click="showSplit()"><span class="glyphicon"></span> Split</button>
+                        
+                    </div>
+                    <div class="clear"></div>
+                    <div class="add-content margin-top">
+
+                        <table cellspacing="0" cellpadding="0" border="0" class="table-grid spanX budget-table-home">
+                            <tbody id="split-table">
+                                <tr>
+                                    <th><a href="#">Walmart</a></th>
+                                    <th colspan="2" class="budget-bar"><a href="#">Shopping</a></th>
+                                    <th><a href="#">143</a></th>
+                                    <th><a href="#"></a></th>
+                                </tr>
+                                <tr>
+                                    <td><label class="form-control split-label labelDisable">Walmart</label></td>
+                                    <td colspan="2">
+                                        <div class="drop-down"></div>
+                                    </td>
+                                    <td><input name="txtAccountName" type="text" class="form-control" id="txtAccountName1"></td>
+                                    <td><button ng-click="addNewRowForEdit($event)" class="btn btn-primary pull-left"><span class="glyphicon"></span> Split</button></td>
+
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
+
+
+                        </div>
+
+                        <div class="button-block clearfix">
+                            <button type="submit" class="btn btn-primary pull-right"><span class="glyphicon"></span> Save</button>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        
+    });
+</script>
+

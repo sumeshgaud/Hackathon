@@ -1949,4 +1949,22 @@ margin-top: 10px;
     font-size: 1.14em;
 }
 
-    
+.description{
+    color:gray; font-style:italic; margin-left:4px;
+}
+
+.separator{
+    border-bottom:1px solid grey; margin: 15px 10px 10px 10px;
+}
+
+.left-panel{
+    margin-bottom: 0;
+}
+
+.k-dropdown-wrap {
+    height: 34px;
+}
+
+.split-label{
+    margin-top:4px;
+}

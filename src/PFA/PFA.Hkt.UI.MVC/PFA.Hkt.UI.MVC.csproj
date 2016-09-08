@@ -153,6 +153,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BudgetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InvestmentController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TransactionController.cs" />
@@ -221,6 +222,7 @@
     <Content Include="Content\Common\bootstrap.css" />
     <Content Include="Content\Common\bootstrap.min.css" />
     <Content Include="Content\Common\KendoCustom.css" />
+    <Content Include="Content\Common\rangecalendar.css" />
     <Content Include="Content\Common\Site.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\about-health.jpg" />
@@ -398,15 +400,20 @@
     <Content Include="Scripts\Core\modernizr-2.6.2.js" />
     <Content Include="Scripts\Core\_references.js" />
     <Content Include="Scripts\Feature\Comman\alpha.chart.js" />
+    <Content Include="Scripts\Feature\Comman\alpha.constant.js" />
     <Content Include="Scripts\Feature\Comman\alpha.helper.js" />
     <Content Include="Scripts\Feature\Comman\alpha.grid.js" />
+    <Content Include="Scripts\Feature\Comman\alpha.sidebar.js" />
     <Content Include="Scripts\Feature\Comman\app.js" />
     <Content Include="Scripts\Feature\Dashboard\alpha.dashboard.js" />
     <Content Include="Scripts\Feature\Dashboard\apha.dashboard.chart.js" />
     <Content Include="Scripts\Feature\Login.js" />
     <Content Include="Scripts\Feature\Register.js" />
+    <Content Include="Scripts\lib\jquery.rangecalendar.js" />
+    <Content Include="Scripts\lib\moment+langs.min.js" />
     <Content Include="Scripts\lib\Telerik\kendo.all.min.js" />
     <Content Include="Scripts\lib\Telerik\kendo.angular.min.js" />
+    <Content Include="Scripts\lib\Telerik\kendo.web.ext.js" />
     <Content Include="Scripts\lib\Telerik\Styles\Default\editor.png" />
     <Content Include="Scripts\lib\Telerik\Styles\Default\imagebrowser.png" />
     <Content Include="Scripts\lib\Telerik\Styles\Default\indeterminate.gif" />
@@ -448,6 +455,7 @@
     <Content Include="Views\Shared\_SideLayout.cshtml" />
     <Content Include="Views\Budget\Index.cshtml" />
     <Content Include="Views\Setting\Index.cshtml" />
+    <Content Include="Views\Investment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

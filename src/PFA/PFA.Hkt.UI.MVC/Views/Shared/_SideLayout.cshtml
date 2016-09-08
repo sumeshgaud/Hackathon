@@ -1,63 +1,83 @@
-﻿<div class="col-sm-4">
+﻿<div class="col-sm-4" data-ng-controller="sideBarCtrl" data-ng-init="init()">
     <h3>Accounts details</h3>
-    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+    <div class="panel-group left-panel" id="accordion1" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab">
                 <h4 class="panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="glyphicon glyphicon-info-sign"></span>Cash
+                        @*<span class="glyphicon glyphicon-info-sign"></span>*@
+                        <span>Cash</span><span class="pull-right"> {{ getTotal(1) }}</span>
                     </a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                    <div class="form-group">
-                        <span>Credit 1</span><span class="pull-right">Details</span>
+                    <div ng-repeat="account in accounts | filter : {type: 1}">
+                        <span>{{account.Name}}</span><span class="pull-right">{{account.Amount}}</span>
+                        <br />
+                        <span class="description" >{{account.Description}}</span>
+                        <div class="separator"></div>
                     </div>
-                    <div class="form-group">
-                        <span>Credit 1</span><span class="pull-right">Details</span>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+    <div class="panel-group left-panel" id="accordion2" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <span class="glyphicon glyphicon-info-sign"></span>Credit cards
+                        @*<span class="glyphicon glyphicon-info-sign"></span>*@
+                        <span>Credit Cards</span><span class="pull-right">{{ getTotal(3) }}</span>
                     </a>
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                    <div class="form-group">
-                        <span>Credit 1</span><span class="pull-right">Details</span>
-                    </div>
-                    <div class="form-group">
-                        <span>Credit 1</span><span class="pull-right">Details</span>
+                    <div ng-repeat="account in accounts | filter : {type: 3}">
+                        <span>{{account.Name}}</span><span class="pull-right">{{account.Amount}}</span>
+                        <br />
+                        <span class="description">{{account.Description}}</span>
+                        <div class="separator"></div>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+    <div class="panel-group left-panel" id="accordion3" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <span class="glyphicon glyphicon-info-sign"></span>Loans
+                        @*<span class="glyphicon glyphicon-info-sign"></span>*@
+                        <span>Loans</span><span class="pull-right">13244</span>
                     </a>
                 </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
-                    <p>Ist account</p>
-                    <p>IIst account</p>
-                    <p>IIIst account</p>
+                    @*<p>Ist account</p>
+                        <p>IIst account</p>
+                        <p>IIIst account</p>*@
+                    <div>
+                        <span>Ist account</span><span class="pull-right">3122</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 10px 10px;"></div>
+                    <div>
+                        <span>IInd account</span><span class="pull-right">1223</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 10px 10px;"></div>
+                    <div>
+                        <span>IIIrd account</span><span class="pull-right">1223</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 0px 10px;"></div>
                 </div>
             </div>
         </div>
@@ -67,11 +87,44 @@
             <div class="panel-heading" role="tab" id="headingFour">
                 <h4 class="panel-title">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour" aria-expanded="true" aria-controls="collapseThree">
-                        <span class="glyphicon glyphicon-info-sign"></span>Can I use special characters?
+                        @*<span class="glyphicon glyphicon-info-sign"></span>*@Goals
                     </a>
                 </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                    <div>
+                        <span>Goal 1</span><span class="pull-right">3122</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 10px 10px;"></div>
+                    <div>
+                        <span>Goal 2</span><span class="pull-right">1223</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 10px 10px;"></div>
+                    <div>
+                        <span>Goal 3</span><span class="pull-right">1223</span>
+                        <br />
+                        <span style="color:gray; font-style:italic; margin-left:4px;">Credit Desc</span>
+                    </div>
+                    <div style="border-bottom:1px solid grey; margin: 15px 10px 0px 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
+                        @*<span class="glyphicon glyphicon-info-sign"></span>*@Can I use special characters?
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
                 <div class="panel-body">
                     Please use only letters, numbers, spaces and hyphens in your answers.
                 </div>

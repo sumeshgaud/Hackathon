@@ -10,6 +10,7 @@
 
     <link href="~/Content/Lib/Telerik/styles/kendo.default.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/Lib/Telerik/styles/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Content/Common/rangecalendar.css" type="text/css">
     @Styles.Render("~/bundles/Style/Lib")
     <link href="~/Content/Common/site.css" rel=" stylesheet" type="text/css">
     <link href="~/Content/Common/KendoCustom.css" rel=" stylesheet" type="text/css">
@@ -27,6 +28,8 @@
     <!--Fushion charts-->
     <script type="text/javascript" src="~/Content/Charts/FusionCharts.js"></script>
     <script type="text/javascript" src="~/Content/Charts/FusionCharts.jqueryplugin.js"></script>
+    <script type="text/javascript" src="~/Scripts/lib/jquery.rangecalendar.js"></script>
+    <script type="text/javascript" src="~/Scripts/lib/moment+langs.min.js"></script>
     <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.chart.js"></script>
     
 
@@ -67,6 +70,8 @@
     </div>
 
     @RenderBody()
+
+    <div class="clear"></div>
     <div id="footer">
         <div class="container">
             <nav class="pull-left">
@@ -86,6 +91,9 @@
 
     <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.helper.js"></script>
     <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.grid.js"></script>
+    <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.constant.js"></script>
+    <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.sidebar.js"></script>
+
 
 </body>
 

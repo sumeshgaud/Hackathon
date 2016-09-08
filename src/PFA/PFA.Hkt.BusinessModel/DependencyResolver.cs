@@ -13,7 +13,7 @@ namespace BusinessModel
             registerComponent.RegisterType<IUserService, UserService>();
             registerComponent.RegisterType<IAccountService, AccountService>();
             registerComponent.RegisterType<IBudgetService, BudgetService>();
-
+            registerComponent.RegisterType<ICommonService, CommonService>();
         }
     }
 }

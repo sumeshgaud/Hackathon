@@ -65,8 +65,10 @@
     <Compile Include="BusinessEntity\beUser.cs" />
     <Compile Include="BusinessRepository\AccountService.cs" />
     <Compile Include="BusinessRepository\BudgetService.cs" />
+    <Compile Include="BusinessRepository\CommonService.cs" />
     <Compile Include="BusinessRepository\IAccountService.cs" />
     <Compile Include="BusinessRepository\IBudgetService.cs" />
+    <Compile Include="BusinessRepository\ICommonService.cs" />
     <Compile Include="BusinessRepository\ITransactionService.cs" />
     <Compile Include="BusinessRepository\IUserService.cs" />
     <Compile Include="BusinessRepository\TransactionService.cs" />

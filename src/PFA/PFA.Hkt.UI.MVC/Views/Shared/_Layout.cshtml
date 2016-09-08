@@ -7,7 +7,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    
     <link href="~/Content/Lib/Telerik/styles/kendo.default.min.css" rel="stylesheet" type="text/css">
     <link href="~/Content/Lib/Telerik/styles/kendo.common.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="~/Content/Common/rangecalendar.css" type="text/css">
@@ -16,10 +18,11 @@
     <link href="~/Content/Common/KendoCustom.css" rel=" stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     @RenderSection("styles", required: false)
-    @Styles.Render("~/bundles/Style/Branding")  
+    @Styles.Render("~/bundles/Style/Branding")
+ 
       
     @Scripts.Render("~/bundles/Scripts/Core")
-
+    <script type="text/javascript" src="~/Scripts/Core/jquery-ui-1.10.2.js"></script>
     <script type="text/javascript" src="~/Scripts/lib/Telerik/kendo.all.min.js"></script>
     <script type="text/javascript" src="~/Scripts/Feature/Comman/app.js"></script>
 
@@ -27,9 +30,7 @@
 
     <!--Fushion charts-->
     <script type="text/javascript" src="~/Content/Charts/FusionCharts.js"></script>
-    <script type="text/javascript" src="~/Content/Charts/FusionCharts.jqueryplugin.js"></script>
-    <script type="text/javascript" src="~/Scripts/lib/jquery.rangecalendar.js"></script>
-    <script type="text/javascript" src="~/Scripts/lib/moment+langs.min.js"></script>
+    <script type="text/javascript" src="~/Content/Charts/FusionCharts.jqueryplugin.js"></script>    
     <script type="text/javascript" src="~/Scripts/Feature/Comman/alpha.chart.js"></script>
     
 

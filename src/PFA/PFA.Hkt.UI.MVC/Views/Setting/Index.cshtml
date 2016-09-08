@@ -18,6 +18,207 @@
 
             @Html.Partial("_SideLayout")
 
+            <div class="col-sm-8">
+
+                <div class="" style="padding-top:2%">
+                    <div class="panel panel-default">
+                        <div class="custom-heading">
+                            <b>Profile Details</b>
+                            <div style="float:right;">
+                                <button type="button" class="btn btn-default">Edit</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table style="width:100%">
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">First Name:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:50%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Last Name:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:50%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Username:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:50%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Email:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:50%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <button id="settings-save" type="button" class="btn btn-warning">Save</button>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div style="padding-bottom:2%">
+                        <button type="button" class="btn-info btn-lg" data-toggle="modal" data-target="#chooseBankModal">Add Account</button>
+                        <div class="modal fade" id="chooseBankModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title"><b>Choose Your Bank:</b></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <input type="image" src="@Url.Content("~/Content/Images/Citibank-logo.jpg")" alt="Submit" width="90%" height="150" style="border:1px solid #000000">
+                                                </th>
+                                                <th>
+                                                    <input type="image" src="@Url.Content("~/Content/Images/ICICI-Bank-logo.jpg")" alt="Submit" width="90%" height="150" style="border:1px solid #000000">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input type="image" src="@Url.Content("~/Content/Images/Axis-bank-logo.jpg")" alt="Submit" width="90%" height="150" style="border:1px solid #000000">
+                                                </th>
+                                                <th>
+                                                    <input type="image" src="@Url.Content("~/Content/Images/standard-chartered-logo.jpg")" alt="Submit" width="90%" height="150" style="border:1px solid #000000">
+                                                </th>
+                                            </tr>
+                                        </table>
+                                        <label style="color:red">Note: Once you choose the bank, the site will redirect to that bank website for account authentication.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="display: inline-block; width:49.5%;">
+                        <div class="panel-heading">
+                            <b>Acc No:00165000003657</b>
+                            <div style="float:right;">
+                                <button type="button" class="btn btn-default">Delete Account</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table style="width:100%">
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Bank Name:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">IFSC Code:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Branch Location:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="display: inline-block; width:49.5%;">
+                        <div class="panel-heading">
+                            <b>Acc No:00165000003657</b>
+                            <div style="float:right;">
+                                <button type="button" class="btn btn-default">Delete Account</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table style="width:100%">
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Bank Name:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">IFSC Code:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Branch Location:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="panel panel-default" style="display: inline-block; width:49.5%;">
+                        <div class="panel-heading">
+                            <b>Acc No:00165000003657</b>
+                            <div style="float:right;">
+                                <button type="button" class="btn btn-default">Delete Account</button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table style="width:100%">
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Bank Name:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">IFSC Code:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label for="fga">Branch Location:</label>
+                                            <input type="text" class="form-control" id="fga" style="width:90%" disabled="disabled">
+                                        </div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>

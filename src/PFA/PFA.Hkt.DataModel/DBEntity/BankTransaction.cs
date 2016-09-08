@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-   public class Transaction :BaseEntity
+   public class BankTransaction :BaseEntity
     {
        public DateTime Date { get; set; }
        public Guid ReferenceId { get; set; }

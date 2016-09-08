@@ -21,7 +21,7 @@ namespace DataModel
         GenericRepository<Currency> _currencyRepository;
         GenericRepository<Goal> _goalRepository;
         GenericRepository<RecurTransaction> _recurTransactionRepository;
-        GenericRepository<Transaction> _transactionRepository;
+        GenericRepository<BankTransaction> _transactionRepository;
         GenericRepository<User> _userRepository;
         #endregion
 
@@ -144,12 +144,12 @@ namespace DataModel
             }
         }
 
-        public GenericRepository<Transaction> TransactionRepository
+        public GenericRepository<BankTransaction> TransactionRepository
         {
             get
             {
                 if (this._transactionRepository == null)
-                    this._transactionRepository = new GenericRepository<Transaction>(_context);
+                    this._transactionRepository = new GenericRepository<BankTransaction>(_context);
 
                 return this._transactionRepository;
             }

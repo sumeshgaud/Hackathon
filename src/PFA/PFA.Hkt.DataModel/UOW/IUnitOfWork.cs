@@ -19,7 +19,7 @@ namespace DataModel
         GenericRepository<Currency> CurrencyRepository { get; }
         GenericRepository<Goal> GoalRepository { get; }
         GenericRepository<RecurTransaction> RecurTransactionRepository { get; }
-        GenericRepository<Transaction> TransactionRepository { get; }
+        GenericRepository<BankTransaction> TransactionRepository { get; }
         GenericRepository<User> UserRepository { get; }
         #endregion
 

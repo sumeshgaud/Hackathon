@@ -57,6 +57,7 @@
     <Compile Include="DBEntity\Account.cs" />
     <Compile Include="DBEntity\AuthInfo.cs" />
     <Compile Include="DBEntity\Bank.cs" />
+    <Compile Include="DBEntity\BankTransaction.cs" />
     <Compile Include="DBEntity\BaseEntity.cs" />
     <Compile Include="DBEntity\Budget.cs" />
     <Compile Include="DBEntity\BudgetDetail.cs" />
@@ -64,7 +65,6 @@
     <Compile Include="DBEntity\Currency.cs" />
     <Compile Include="DBEntity\Goal.cs" />
     <Compile Include="DBEntity\RecurTransaction.cs" />
-    <Compile Include="DBEntity\Transaction.cs" />
     <Compile Include="DBEntity\User.cs" />
     <Compile Include="DBMapping\AccountMap.cs" />
     <Compile Include="DBMapping\AuthInfoMap.cs" />

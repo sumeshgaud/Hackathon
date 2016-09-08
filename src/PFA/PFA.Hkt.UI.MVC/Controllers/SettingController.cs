@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BusinessModel;
+using System.Net;
 
 namespace PFA.Hkt.UI.MVC.Controllers
 {
@@ -21,13 +22,13 @@ namespace PFA.Hkt.UI.MVC.Controllers
             return View();
         }
 
-        public ActionResult Create(beCategory beCategory)
+        public ActionResult Create(beCategory category)
         {
-            if (beCategory != null && ModelState.IsValid)
+            if (category != null && ModelState.IsValid)
             {
                 try
                 {
-                    _commonService.CreateCategory(beCategory);
+                    _commonService.CreateCategory(category);
                     return RedirectToAction("Index");
                 }
                 catch (Exception)
@@ -48,19 +49,21 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public ActionResult GetAllCategory(Guid userId)
         {
+            if (userId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
             var categories = _commonService.GetAllCategory(userId);
-
-
             return View(categories.ToList());
         }
 
-        public ActionResult Delete(Guid UserId, Guid ParentCategoryId)
+        public ActionResult Delete(Guid UserId, Guid Id)
         {
             bool successStatus = false;
 
-            if (UserId != null)
+            if (Id != null)
             {
-                successStatus = _commonService.DeleteCategory(UserId);
+                successStatus = _commonService.DeleteCategory(Id);
                 if (successStatus)
                 {
                     ViewBag.Message = "Category Deleted Successfully";

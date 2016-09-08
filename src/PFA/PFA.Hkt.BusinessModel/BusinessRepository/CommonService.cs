@@ -26,7 +26,7 @@ namespace BusinessModel
         public IEnumerable<beCategory> GetAllCategory(Guid userId)
         {
 
-            var categoryList = _unitOfWork.CategoryRepository.GetAll().ToList();
+            var categoryList = _unitOfWork.CategoryRepository.GetAll().Where(x => x.UserId == userId).ToList();
 
             try
             {
@@ -54,16 +54,17 @@ namespace BusinessModel
                 {
                     var category = new Category
                     {
-                        UserId = new Guid(),
+                        Id = new Guid(),
+                        UserId = categoryEntity.UserId,
                         CategoryName = categoryEntity.CategoryName,
                         Type = categoryEntity.Type,
                         IsActive = categoryEntity.IsActive,
-                        ParentCategoryId = new Guid()
+                        ParentCategoryId = categoryEntity.ParentCategoryId
                     };
                     _unitOfWork.CategoryRepository.Insert(category);
                     _unitOfWork.Save();
                     scope.Complete();
-                    return category.UserId;
+                    return category.Id;
                 }
             }
             catch (Exception ex)

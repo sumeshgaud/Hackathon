@@ -10,6 +10,7 @@ namespace BusinessModel
     public interface ITransactionService
     {
         beTransaction GetTransactionById(Guid transId);
+        IEnumerable<beTransaction> GetAllTransaction(Guid UserID);
         IEnumerable<beTransaction> GetAllTransaction();
         Guid CreateTransaction(beTransaction transEntity);
         bool UpdateTransaction(Guid transId, beTransaction transEntity);

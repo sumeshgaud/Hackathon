@@ -99,7 +99,7 @@ namespace BusinessModel
         public bool DeleteUser(Guid userId)
         {
             var success = false;
-            if (userId!=null)
+            if (userId != null)
             {
                 using (var scope = new TransactionScope())
                 {
@@ -117,7 +117,9 @@ namespace BusinessModel
 
         public bool IsValid(string userName, string password)
         {
-            User user = _unitOfWork.UserRepository.GetSingle(u => u.UserName == userName);
+            User user = _unitOfWork.UserRepository.GetFirst(u => u.UserName == userName);
+            if (user == null)
+                return false;
             if (user.Password == password)
                 return true;
             else

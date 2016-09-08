@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Security.Authentication;
 using BusinessModel;
+using System.Web.Security;
 
 namespace PFA.Hkt.UI.MVC.Controllers
 {
@@ -12,6 +14,11 @@ namespace PFA.Hkt.UI.MVC.Controllers
     {
         //
         // GET: /Account/
+        private readonly IUserService _userService;
+        public AccountController(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         public ActionResult Login()
         {
@@ -22,9 +29,18 @@ namespace PFA.Hkt.UI.MVC.Controllers
         [HttpPost]
         public ActionResult Login(string password, string userName)
         {
-            ViewBag.success = "false";
-            ViewBag.message = "Username and password incorrect. Try later.";
-            return View();
+            if (_userService.IsValid(userName, password))
+            {
+                FormsAuthentication.SetAuthCookie(userName, false);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ViewBag.success = "false";
+                ViewBag.message = "Username and password incorrect. Try later.";
+                return View();
+            }
+
         }
 
         public ActionResult Register()
@@ -32,9 +48,13 @@ namespace PFA.Hkt.UI.MVC.Controllers
             return View();
         }
 
-        public ActionResult SubmitRegistration(RegistrationViewModel registrationViewModel)
+        public ActionResult SubmitRegistration(beUser registrationViewModel)
         {
-            return View("Register");
+            Guid userId = _userService.CreateUser(registrationViewModel);
+            if (userId != null)
+                return RedirectToAction("Login");
+            else
+                return View("Register");
         }
 
     }

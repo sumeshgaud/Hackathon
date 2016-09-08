@@ -14,8 +14,8 @@ namespace DataModel
        public string Password { get; set; }
        public string PasswordSalt { get; set; }
        public bool IsActive { get; set; }
-       public int PrimaryNumber { get; set; }
+       public int ?PrimaryNumber { get; set; }
        public string Email { get; set; }
-       public Guid CurrencyId { get; set; }
+       public Guid ?CurrencyId { get; set; }
     }
 }

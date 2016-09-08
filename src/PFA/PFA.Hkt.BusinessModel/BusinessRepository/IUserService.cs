@@ -13,5 +13,6 @@ namespace BusinessModel
         Guid CreateUser(beUser userEntity);
         bool UpdateUser(Guid userId, beUser userEntity);
         bool DeleteUser(Guid userId);
+        bool IsValid(string userName, string password);
     }
 }

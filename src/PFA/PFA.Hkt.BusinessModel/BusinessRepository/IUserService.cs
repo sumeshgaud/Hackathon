@@ -14,5 +14,6 @@ namespace BusinessModel
         bool UpdateUser(Guid userId, beUser userEntity);
         bool DeleteUser(Guid userId);
         bool IsValid(string userName, string password);
+        IEnumerable<beCurrency> GetAllCurrency();
     }
 }

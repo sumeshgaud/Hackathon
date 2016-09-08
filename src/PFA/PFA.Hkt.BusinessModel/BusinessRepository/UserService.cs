@@ -125,5 +125,19 @@ namespace BusinessModel
             else
                 return false;
         }
+
+        public IEnumerable<beCurrency> GetAllCurrency()
+        {
+            var currency = _unitOfWork.CurrencyRepository.GetAll().ToList();
+            if (currency != null)
+            {
+                Mapper.CreateMap<Currency, beCurrency>();
+
+                var currencyModel = Mapper.Map<List<Currency>, List<beCurrency>>(currency);
+                return currencyModel;
+            }
+            return null;
+        }
+
     }
 }

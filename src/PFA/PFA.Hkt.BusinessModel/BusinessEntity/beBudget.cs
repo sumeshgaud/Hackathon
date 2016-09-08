@@ -10,7 +10,6 @@ namespace BusinessModel
     {
         public Guid UserId { get; set; }
         public string Type { get; set; }
-        public double Amount { get; set; }
         public int Month { get; set; }
         public int Year { get; set; }
         public bool IsRecuring { get; set; }

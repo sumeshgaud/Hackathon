@@ -14,7 +14,6 @@ namespace DataModel
         public BudgetMap()
        {
            HasKey(t => new { t.Id });
-           Property(t => t.Amount).IsRequired();
            Property(t => t.Type).IsRequired();
            Property(t => t.Month).IsRequired();
            Property(t => t.Year).IsRequired();

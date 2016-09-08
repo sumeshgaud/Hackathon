@@ -54,11 +54,10 @@ namespace BusinessModel
                 {
                     var category = new Category
                     {
-                        UserId = new Guid(),
+                        UserId = Guid.NewGuid(),
                         CategoryName = categoryEntity.CategoryName,
                         Type = categoryEntity.Type,
-                        IsActive = categoryEntity.IsActive,
-                        ParentCategoryId = new Guid()
+                        IsActive = categoryEntity.IsActive
                     };
                     _unitOfWork.CategoryRepository.Insert(category);
                     _unitOfWork.Save();

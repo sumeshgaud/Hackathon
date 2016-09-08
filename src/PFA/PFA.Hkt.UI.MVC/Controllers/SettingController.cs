@@ -46,12 +46,11 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         }
 
-        public ActionResult GetAllCategory(Guid userId)
+        public ActionResult GetAllCategory()
         {
+            var userId = Guid.Parse("d0f2801c-537a-49a1-a053-addc99bb43da");
             var categories = _commonService.GetAllCategory(userId);
-
-
-            return View(categories.ToList());
+            return Json(categories, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Delete(Guid UserId, Guid ParentCategoryId)

@@ -13,6 +13,6 @@ namespace DataModel
         public string CategoryName { get; set; }
         public string Type { get; set; }
         public bool IsActive { get; set; }
-        public Guid ParentCategoryId { get; set; }
+        public Guid? ParentCategoryId { get; set; }
     }
 }

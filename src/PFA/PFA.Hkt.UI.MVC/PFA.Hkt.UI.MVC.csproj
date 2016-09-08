@@ -220,6 +220,7 @@
     <Content Include="Content\Charts\StackedColumn3DLine.swf" />
     <Content Include="Content\Charts\StackedColumn3DLineDY.swf" />
     <Content Include="Content\Charts\ZoomLine.swf" />
+    <Content Include="Content\Common\bootstrap-multiselect.css" />
     <Content Include="Content\Common\bootstrap.css" />
     <Content Include="Content\Common\bootstrap.min.css" />
     <Content Include="Content\Common\KendoCustom.css" />
@@ -406,6 +407,7 @@
     <Content Include="Scripts\Core\_references.js" />
     <Content Include="Scripts\Feature\Comman\alpha.chart.js" />
     <Content Include="Scripts\Feature\Comman\alpha.constant.js" />
+    <Content Include="Scripts\Feature\Comman\alpha.helper.directives.js" />
     <Content Include="Scripts\Feature\Comman\alpha.helper.js" />
     <Content Include="Scripts\Feature\Comman\alpha.grid.js" />
     <Content Include="Scripts\Feature\Comman\alpha.sidebar.js" />
@@ -415,6 +417,7 @@
     <Content Include="Scripts\Feature\Investment\alpha.investment.js" />
     <Content Include="Scripts\Feature\Login.js" />
     <Content Include="Scripts\Feature\Register.js" />
+    <Content Include="Scripts\lib\bootstrap-multiselect.js" />
     <Content Include="Scripts\lib\jquery.rangecalendar.js" />
     <Content Include="Scripts\lib\moment.langs.min.js" />
     <Content Include="Scripts\lib\Telerik\kendo.all.min.js" />

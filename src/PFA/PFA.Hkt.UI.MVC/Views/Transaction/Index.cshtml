@@ -3,6 +3,15 @@
     ViewBag.Menu = "Transaction";
 
 }
+
+@section scripts{
+    <script type="text/javascript">
+        var ROOT = '@Url.Content("~/")';
+        var response = {};
+
+    </script>
+    <script type="text/javascript" src="~/Scripts/Feature/Register.js"></script>
+}
 <script type="text/javascript" src="~/Scripts/lib/Telerik/kendo.web.ext.js"></script>
 <script type="text/javascript" src="~/Scripts/Feature/Transaction/alpha.transaction.js"></script>
 
@@ -15,14 +24,65 @@
             @Html.Partial("_SideLayout")
 
 
-            <div class="col-sm-8">
+            <div class="col-sm-8 section-background">
+                <div class="col-sm-12 margin-top">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="txtFirst">Filter by account: </label>
+                                <select name="ddlAccount"
+                                        id="ddlAccount"
+                                        class="form-control multiselect"
+                                        ng-model="accountIds"
+                                        multiple="multiple"></select>
+                                <span class="k-invalid-msg" data-for="ddlAccount"></span>
+                            </div>
+                        </div>
 
-                <div class="form-group">
-                    <label for="txtFirst">Filter by account: </label>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="txtFirst">From Date: </label>
+                                <input kendo-date-picker
+                                       k-format="'MM/dd/yyyy'"
+                                       k-parse-formats="MM/dd/yyyy"
+                                       id="dtEffective"
+                                       name="dtEffective"
+                                       class="form-control date-validation datepicker"
+                                       placeholder="mm/dd/yyyy"
+                                       type="text"
+                                       ng-model="FromDate"
+                                       pattern="^([1][0-2]|[0][1-9])\/([3][01]|[0-2][0-9])\/(\d{4})$"
+                                       style="border:none;box-shadow:none"
+                                       only-date />
+                                <span class="k-invalid-msg" data-for="ddlAccount"></span>
+                            </div>
+                        </div>
 
-                    <span class="k-invalid-msg" data-for="txtFirst"></span>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label for="txtFirst">To Date: </label>
+                                <input kendo-date-picker
+                                       k-format="'MM/dd/yyyy'"
+                                       k-parse-formats="MM/dd/yyyy"
+                                       id="dtBenefitEffectiveDate"
+                                       name="dtBenefitEffectiveDate"
+                                       class="form-control date-validation datepicker"
+                                       placeholder="mm/dd/yyyy"
+                                       type="text"
+                                       ng-model="ToDate"
+                                       pattern="^([1][0-2]|[0][1-9])\/([3][01]|[0-2][0-9])\/(\d{4})$"
+                                       style="border:none;box-shadow:none"
+                                       only-date />
+                                <span class="k-invalid-msg" data-for="ddlAccount"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 clearfix border-bottom margin-bottom">
+                    <button type="submit" class="btn btn-primary pull-right margin-bottom" ng-click="filterGrid()"><span class="glyphicon"></span> Filter</button>
                 </div>
 
+                <div class="clear"></div>
 
                 <table id="TransactionGrid" class="table k-grid-content" style="margin-bottom:8px;"> </table>
                 <span style="cursor:default"
@@ -37,12 +97,12 @@
 
 
 
-            @*<div id="dropDownTreeView">
+                    @*<div id="dropDownTreeView">
                 </div>*@
-        </div>
+                </div>
 
 
-    </div>
+            </div>
 
 
 

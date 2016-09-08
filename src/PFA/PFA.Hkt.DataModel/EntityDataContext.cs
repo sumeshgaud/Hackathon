@@ -43,7 +43,7 @@ namespace DataModel
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<Goal> Goals { get; set; }
         public DbSet<RecurTransaction> RecurTransactions { get; set; }
-        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<BankTransaction> Transactions { get; set; }
         public DbSet<User> Users { get; set; }
        
 

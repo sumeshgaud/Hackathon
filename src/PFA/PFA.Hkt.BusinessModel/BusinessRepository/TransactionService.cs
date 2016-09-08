@@ -31,29 +31,132 @@ namespace BusinessModel
             return null;
         }
 
+
         public IEnumerable<beTransaction> GetAllTransaction()
         {
-            throw new NotImplementedException(); 
+            var transcationList = _unitOfWork.TransactionRepository.GetAll().ToList();
+
+            try
+            {
+                if (transcationList != null)
+                {
+                    Mapper.CreateMap<BankTransaction, beTransaction>();
+
+                    var transactionModel = Mapper.Map<List<BankTransaction>, List<beTransaction>>(transcationList);
+                    return transactionModel;
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public IEnumerable<beTransaction> GetAllTransaction(Guid UserID)
+        {
+            var transcationList = _unitOfWork.TransactionRepository.GetAll().Where(x => x.UserId == UserID).ToList();
+
+            try
+            {
+                if (transcationList != null)
+                {
+                    Mapper.CreateMap<BankTransaction, beTransaction>();
+
+                    var transactionModel = Mapper.Map<List<BankTransaction>, List<beTransaction>>(transcationList);
+                    return transactionModel;
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Guid CreateTransaction(beTransaction transEntity)
         {
-            throw new NotImplementedException();
+            using (var scope = new TransactionScope())
+            {
+                var transaction  = new BankTransaction
+                {
+                   Id = new Guid(),
+                   AccountId = transEntity.AccountId,
+                   Amount =transEntity.Amount,
+                   CategoryId = transEntity.CategoryId,
+                   Date = transEntity.Date,
+                   Description = transEntity.Description,
+                   IsSplitTransaction =transEntity.IsSplitTransaction,
+                   Note = transEntity.Note,
+                   ParentId = transEntity.ParentId,
+                   Payee = transEntity.Payee,
+                   ReferenceId = transEntity.ReferenceId,
+                   TxSource = transEntity.TxSource,
+                   Type = transEntity.Type,
+                   UserId = transEntity.UserId
+                };
+
+                _unitOfWork.TransactionRepository.Insert(transaction);
+                _unitOfWork.Save();
+                scope.Complete();
+                return transaction.Id;
+            }
         }
 
         public bool UpdateTransaction(Guid transId, beTransaction transEntity)
         {
-            throw new NotImplementedException();
+            var success = false;
+            if (transEntity != null)
+            {
+                using (var scope = new TransactionScope())
+                {
+                    var transaction = _unitOfWork.TransactionRepository.GetById(transEntity);
+                    if (transaction != null)
+                    {
+                        transaction.Description = transEntity.Description;
+                        transaction.CategoryId = transEntity.CategoryId;
+                        _unitOfWork.TransactionRepository.Update(transaction);
+                        _unitOfWork.Save();
+                        scope.Complete();
+                        success = true;
+                    }
+                }
+            }
+            return success;
         }
 
         public bool DeleteTransaction(Guid transId)
         {
-            throw new NotImplementedException();
+            var success = false;
+            if (transId != null)
+            {
+                using (var scope = new TransactionScope())
+                {
+                    var transDetail = _unitOfWork.TransactionRepository.GetById(transId);
+                    {
+                        _unitOfWork.TransactionRepository.Delete(transDetail);
+                        _unitOfWork.Save();
+                        scope.Complete();
+                        success = true;
+                    }
+                }
+            }
+            return success;
         }
 
         public beTransaction GetTransactionById(Guid transId)
         {
-            throw new NotImplementedException();
+            var transactionDetails = _unitOfWork.TransactionRepository.GetById(transId);
+            if (transactionDetails != null)
+            {
+                Mapper.CreateMap<BankTransaction, beTransaction>();
+
+                var transactionModel = Mapper.Map<BankTransaction, beTransaction>(transactionDetails);
+                return transactionModel;
+            }
+            return null;
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-     class TransactionMap : EntityTypeConfiguration<Transaction>
+     class TransactionMap : EntityTypeConfiguration<BankTransaction>
     {
        public TransactionMap()
        {

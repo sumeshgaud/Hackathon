@@ -57,5 +57,9 @@ namespace PFA.Hkt.UI.MVC.Controllers
                 return View("Register");
         }
 
+        public JsonResult GetAllCurrencyList()
+        {
+            return Json(_userService.GetAllCurrency());
+        }
     }
 }

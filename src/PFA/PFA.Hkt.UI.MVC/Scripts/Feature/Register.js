@@ -9,6 +9,16 @@ function RegisterCtrl($scope, $http, $window, $q) {
 
     $scope.init = function () {
 
+
+        $q.all([
+            $http.get(window.ROOT + "Account/GetAllCurrencyList")            
+        ]).then(function (results) {
+            $scope.currencies = results[0].data;            
+        }).finally(function () {
+            
+        });
+
+
         $scope.userNameAlreadyExists = false;
         $scope.emailIdAlreadyExists == false;
 

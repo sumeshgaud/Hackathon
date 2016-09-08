@@ -469,6 +469,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PFA.Hkt.BusinessModel\PFA.Hkt.BusinessModel.csproj">
+      <Project>{e3c120c2-8ebd-43f0-a586-337559cca3f9}</Project>
+      <Name>PFA.Hkt.BusinessModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

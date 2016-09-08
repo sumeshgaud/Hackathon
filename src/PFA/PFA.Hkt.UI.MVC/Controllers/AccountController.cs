@@ -50,6 +50,8 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public ActionResult SubmitRegistration(beUser registrationViewModel)
         {
+
+            registrationViewModel.CurrencyId = Guid.Parse("8f67e9e8-cd0a-4a16-a467-a51abe964e10");
             Guid userId = _userService.CreateUser(registrationViewModel);
             if (userId != null)
                 return RedirectToAction("Login");
@@ -57,9 +59,10 @@ namespace PFA.Hkt.UI.MVC.Controllers
                 return View("Register");
         }
 
+        [AllowAnonymous]
         public JsonResult GetAllCurrencyList()
         {
-            return Json(_userService.GetAllCurrency());
+            return Json(_userService.GetAllCurrency(), JsonRequestBehavior.AllowGet);
         }
     }
 }

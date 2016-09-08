@@ -48,7 +48,7 @@ namespace BusinessModel
             {
                 var user = new User
                 {
-                    Id = new Guid(),
+                    Id = Guid.NewGuid(),
                     FirstName = userEntity.FirstName,
                     LastName = userEntity.LastName,
                     Email = userEntity.Email,

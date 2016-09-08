@@ -7,7 +7,7 @@ using AutoMapper;
 
 namespace BusinessModel
 {
-  public class AccountService:IAccountService
+    public class AccountService : IAccountService
     {
         private IUnitOfWork _unitOfWork;
 
@@ -31,7 +31,7 @@ namespace BusinessModel
 
         public IEnumerable<beAccount> GetAllAccounts()
         {
-            var account = _unitOfWork.AccountRepository.GetAll().ToList();
+            var account = _unitOfWork.AccountRepository.GetAll() == null ? null : _unitOfWork.AccountRepository.GetAll().ToList();
             if (account != null)
             {
                 Mapper.CreateMap<Account, beAccount>();

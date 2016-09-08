@@ -63,13 +63,20 @@
     <Compile Include="BusinessEntity\beRecurTransaction.cs" />
     <Compile Include="BusinessEntity\beTransaction.cs" />
     <Compile Include="BusinessEntity\beUser.cs" />
+    <Compile Include="BusinessRepository\AccountService.cs" />
+    <Compile Include="BusinessRepository\IAccountService.cs" />
     <Compile Include="BusinessRepository\ITransactionService.cs" />
+    <Compile Include="BusinessRepository\IUserService.cs" />
     <Compile Include="BusinessRepository\TransactionService.cs" />
+    <Compile Include="BusinessRepository\UserService.cs" />
     <Compile Include="DependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-   public class GenericRepository<TEntity> where TEntity:class
+    public class GenericRepository<TEntity> where TEntity : class
     {
         #region Private member variables...
         internal EntityDataContext _context;
@@ -29,8 +29,15 @@ namespace DataModel
         /// <returns></returns>
         public virtual IEnumerable<TEntity> Get()
         {
+            try 
+            { 
             IQueryable<TEntity> query = _dbSet;
             return query.ToList();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -40,7 +47,14 @@ namespace DataModel
         /// <returns></returns>
         public virtual TEntity GetById(object id)
         {
-            return _dbSet.Find(id);
+            try
+            {
+                return _dbSet.Find(id);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -48,8 +62,8 @@ namespace DataModel
         /// </summary>
         /// <param name="entity"></param>
         public virtual void Insert(TEntity _entity)
-        {
-            _dbSet.Add(_entity);
+        {  
+                _dbSet.Add(_entity);
         }
 
         /// <summary>
@@ -95,7 +109,15 @@ namespace DataModel
 
         public virtual IEnumerable<TEntity> GetMany(Func<TEntity, bool> where)
         {
-            return _dbSet.Where(where).ToList();
+            try
+            {
+                return _dbSet.Where(where).ToList();
+            }
+            catch
+            {
+                return null;
+            }
+
         }
 
         /// <summary>
@@ -106,7 +128,14 @@ namespace DataModel
 
         public virtual IQueryable<TEntity> GetManyQuerable(Func<TEntity, bool> where)
         {
-            return _dbSet.Where(where).AsQueryable();
+            try
+            {
+                return _dbSet.Where(where).AsQueryable();
+            }
+            catch
+            {
+                return null;
+            }
         }
         /// <summary>
         /// generic get method , fetches data for the entities on the basis of condition.
@@ -116,7 +145,14 @@ namespace DataModel
 
         public TEntity Get(Func<TEntity, Boolean> where)
         {
-            return _dbSet.Where(where).FirstOrDefault<TEntity>();
+            try
+            {
+                return _dbSet.Where(where).FirstOrDefault<TEntity>();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -137,7 +173,14 @@ namespace DataModel
         /// <returns></returns>
         public virtual IEnumerable<TEntity> GetAll()
         {
-           return _dbSet.ToList();
+            try
+            {
+                return _dbSet.ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -147,7 +190,14 @@ namespace DataModel
         /// <returns></returns>
         public bool Exists(object primaryKey)
         {
-            return _dbSet.Find(primaryKey) != null;
+            try
+            {
+                return _dbSet.Find(primaryKey) != null;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -157,7 +207,14 @@ namespace DataModel
         /// <returns>A single record that matches the specified criteria</returns>
         public TEntity GetSingle(Func<TEntity, bool> predicate)
         {
-            return _dbSet.Single<TEntity>(predicate);
+            try
+            {
+                return _dbSet.Single<TEntity>(predicate);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -167,10 +224,17 @@ namespace DataModel
         /// <returns>A single record containing the first record matching the specified criteria</returns>
         public TEntity GetFirst(Func<TEntity, bool> predicate)
         {
-            return _dbSet.First<TEntity>(predicate);
+            try
+            {
+                return _dbSet.First<TEntity>(predicate);
+            }
+            catch
+            {
+                return null;
+            }
         }
-        
-        
+
+
         #endregion
     }
 }

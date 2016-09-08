@@ -6,7 +6,7 @@
     <script type="text/javascript">
         var ROOT = '@Url.Content("~/")';
         var response = {};
-        
+
     </script>
     <script type="text/javascript" src="~/Scripts/Feature/Register.js"></script>
 }
@@ -25,7 +25,7 @@
         }
     </style>
 
-<link href="@Url.Content("~/Content/Common/site.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/Common/site.css")" rel="stylesheet" />
 }
 <div class="container theme-showcase" role="main" data-ng-controller="RegisterCtrl" data-ng-init="init()">
     @Html.Partial("_Status")
@@ -46,163 +46,106 @@
                         <div class="form-group">
                             <label for="txtFirst">First Name: <span class="mandatory">*</span></label>
                             <input name="txtFirst"
-                                   id="txtFirst"
-                                   type="text"
-                                   class="form-control"
-                                   ng-model="registrationDetails.Firstname"
-                                   required
-                                   maxlength="205"
-                                   data-required-msg="Enter firstname">
+                                id="txtFirst"
+                                type="text"
+                                class="form-control"
+                                ng-model="registrationDetails.Firstname"
+                                required
+                                maxlength="205"
+                                data-required-msg="Enter firstname">
                             <span class="k-invalid-msg" data-for="txtFirst"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtLast">Last Name: <span class="mandatory">*</span></label>
                             <input name="txtLast"
-                                   id="txtLast"
-                                   type="text"
-                                   class="form-control"
-                                   ng-model="registrationDetails.Lastname"
-                                   required
-                                   maxlength="205"
-                                   data-required-msg="Enter lastname">
-                            <span class="k-invalid-msg" data-for="txtLast" ></span>
+                                id="txtLast"
+                                type="text"
+                                class="form-control"
+                                ng-model="registrationDetails.Lastname"
+                                required
+                                maxlength="205"
+                                data-required-msg="Enter lastname">
+                            <span class="k-invalid-msg" data-for="txtLast"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtUsername">Username: </label>
                             <span class="mandatory">*</span>
                             <input name="txtUsername"
-                                   id="txtUsername"
-                                   type="text"
-                                   class="form-control"
-                                   ng-model="registrationDetails.Username"
-                                   maxlength="205"
-                                   required                                   
-                                   data-required-msg="Enter username">
+                                id="txtUsername"
+                                type="text"
+                                class="form-control"
+                                ng-model="registrationDetails.Username"
+                                maxlength="205"
+                                required
+                                data-required-msg="Enter username">
                             <span class="k-invalid-msg" data-for="txtUsername" id="spnUsername"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtEmailAddress">E-mail Address: <span class="mandatory">*</span></label>
                             <input name="txtEmailAddress"
-                                   id="txtEmailAddress"
-                                   type="text"
-                                   class="form-control"
-                                   ng-model="registrationDetails.Email"
-                                   required
-                                   maxlength="205"                                   
-                                   data-required-msg="Enter email address">
+                                id="txtEmailAddress"
+                                type="text"
+                                class="form-control"
+                                ng-model="registrationDetails.Email"
+                                required
+                                maxlength="205"
+                                data-required-msg="Enter email address">
                             <span class="k-invalid-msg" data-for="txtEmailAddress" id="spnEmailAddress"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtPassword">Password: <span class="mandatory">*</span></label>
                             <input name="txtPassword"
-                                   id="txtPassword"
-                                   type="password"
-                                   class="form-control"
-                                   ng-model="registrationDetails.Password"
-                                   required
-                                   maxlength="20"
-                                   ng-change="validatePasswordFields()"
-                                   data-required-msg="Enter password" />
+                                id="txtPassword"
+                                type="password"
+                                class="form-control"
+                                ng-model="registrationDetails.Password"
+                                required
+                                maxlength="20"
+                                ng-change="validatePasswordFields()"
+                                data-required-msg="Enter password" />
                             <span class="k-invalid-msg" data-for="txtPassword"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtConfirmPassword">Confirm Password: <span class="mandatory">*</span></label>
                             <input name="txtConfirmPassword"
-                                   id="txtConfirmPassword"
-                                   type="password"
-                                   class="form-control"
-                                   ng-model="registrationDetails.ConfirmPassword"
-                                   maxlength="20"
-                                   required
-                                   data-required-msg="Enter confirm password" />
+                                id="txtConfirmPassword"
+                                type="password"
+                                class="form-control"
+                                ng-model="registrationDetails.ConfirmPassword"
+                                maxlength="20"
+                                required
+                                data-required-msg="Enter confirm password" />
                             <span class="k-invalid-msg" data-for="txtConfirmPassword"></span>
                         </div>
-                        <p>
-                            Fill your permanent address details below.
-                        </p>
+
                         <div class="form-group">
-                            <label for="ddlSecQuest1">Address 1<span class="mandatory">*</span></label>
-                            <input name="txtAnswer1"
-                                   id="txtAnswer1"
-                                   type="text"
-                                   class="form-control"
-                                   required />
+                            <label for="txtMbNumber">Mobile number<span class="mandatory">*</span></label>
+                            <input name="txtMbNumber"
+                                id="txtMbNumber"
+                                type="text"
+                                class="form-control">
                         </div>
-                        <div class="form-group">
-                            <label for="txtAnswer1">Address 2<span class="mandatory">*</span></label>
-                            <input name="txtAnswer1"
-                                   id="txtAnswer1"
-                                   type="text"
-                                   class="form-control"
-                                   required />
-                        </div>
-                        <div class="form-group">
-                            <label for="ddlSecQuest2">Address 3<span class="mandatory">*</span></label>
-                            <input name="txtAnswer1"
-                                   id="txtAnswer1"
-                                   type="text"
-                                   class="form-control"
-                                   required />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtAnswer2">City<span class="mandatory">*</span></label>
-                            <input name="txtAnswer2"
-                                   id="txtAnswer2"
-                                   type="text"
-                                   class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="ddlSecQuest3">Phone number<span class="mandatory">*</span></label>
-                            <input name="txtAnswer1"
-                                   id="txtAnswer1"
-                                   type="text"
-                                   class="form-control"
-                                   required />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtAnswer3">Mobile number<span class="mandatory">*</span></label>
-                            <input name="txtAnswer3"
-                                   id="txtAnswer3"
-                                   type="text"
-                                   class="form-control">
-                        </div>
-                        @*<div class="form-group">
-                                @Html.Captcha(5, "Captcha")
-                            </div>
-                            <div class="form-group">
-                                <input name="chkAgree"
-                                       id="chkAgree"
-                                       type="checkbox"
-                                       ng-disabled="isDisabled"
-                                       required
-                                       >
-                                <label for="chkAgree"
-                                       class="lblFontWeight">
-                                    &nbsp;I have read and agree to be bound by the <a href="#" data-toggle="modal" data-target="#myModalTerms">Terms and Conditions</a> and <a href="#" data-toggle="modal" data-target="#myModalPrivacy" title="Privacy Policy">Privacy Policy</a>.
-                                    <br /><span class="k-invalid-msg" data-for="chkAgree"></span>
-                                </label>
-                            </div>*@
                     </div>
 
                     <div class="panel panel-primary col-sm-12">
                         <div class="panel-body">
 
                             <button type="button"
-                                    class="btn btn-primary pull-left"
-                                    ng-click="cancel()">
-                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                                class="btn btn-primary pull-left"
+                                ng-click="cancel()">
+                                <span class="glyphicon glyphicon-remove"></span>Cancel
                             </button>
 
                             <button type="submit"
-                                    class="btn btn-primary pull-right addMarginLeft"
-                                    ng-click="validateSubmit()">
-                                <span class="glyphicon glyphicon-ok"></span> Submit
+                                class="btn btn-primary pull-right addMarginLeft"
+                                ng-click="validateSubmit()">
+                                <span class="glyphicon glyphicon-ok"></span>Submit
                             </button>
 
                             <button type="button"
-                                    class="btn btn-primary pull-right"
-                                    ng-click="clear()">
-                                <span class="glyphicon glyphicon-refresh"></span> Clear
+                                class="btn btn-primary pull-right"
+                                ng-click="clear()">
+                                <span class="glyphicon glyphicon-refresh"></span>Clear
                             </button>
                         </div>
                     </div>

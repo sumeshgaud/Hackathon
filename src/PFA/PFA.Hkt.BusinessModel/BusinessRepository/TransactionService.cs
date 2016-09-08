@@ -33,7 +33,7 @@ namespace BusinessModel
 
         public IEnumerable<beTransaction> GetAllTransaction()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); 
         }
 
         public Guid CreateTransaction(beTransaction transEntity)

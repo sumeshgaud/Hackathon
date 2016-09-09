@@ -10,6 +10,7 @@ using System.Web.Security;
 
 namespace PFA.Hkt.UI.MVC.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         //
@@ -25,7 +26,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
             ViewBag.success = "true";
             return View();
         }
-
+       
         [HttpPost]
         public ActionResult Login(string password, string userName)
         {
@@ -42,7 +43,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
             }
 
         }
-
+       
         public ActionResult Register()
         {
             return View();
@@ -62,7 +63,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
                 return View("Register");
         }
 
-        [AllowAnonymous]
+       
         public JsonResult GetAllCurrencyList()
         {
             return Json(_userService.GetAllCurrency(), JsonRequestBehavior.AllowGet);

@@ -28,17 +28,14 @@
 	    
 	    $scope.setupControls();
 
-	    $scope.getAllTransaction();
+	    //$scope.getAllTransaction();
 	};
 
 	$scope.getAllTransaction = function () {
-	    $q.all([
-            $http.get(window.ROOT + "Transaction/GetAllTransactions")
-	    ]).then(function (results) {
-	        $scope.transactions = results[0].data;
-	//    $scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
-    //{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
-    //{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }];
+	    //$q.all([
+        //    $http.get(window.ROOT + "Transaction/GetAllTransactions")
+	    //]).then(function (results) {
+	    //    $scope.transactions = results[0].data;
 	//    //}).finally(function () {
 	        if ($scope.transactionGrid == undefined) {
 	            $scope.setupControls();
@@ -47,9 +44,9 @@
 	            if ($scope.transactions.length > 0) {
 	                $scope.transactionGrid.gridInstance.dataSource.page(1);
 	            }
-	            $scope.transactionGrid.refresh();
+	            $scope.transactionGrid.gridInstance.refresh();
 	        }
-	    });
+	    //});
 	};
 
 	$scope.reloadGrid = function () {
@@ -58,13 +55,13 @@
 
 	$scope.setupControls = function () {
 
-	    //$scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
-		//{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
-		//{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }]
+	    $scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
+		{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
+		{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }]
 		var prop = {
 			tableId: "TransactionGrid",
 			dataSource: {
-				data: $scope.transactionData,
+			    data: $scope.transactions,
 				sort: {
 					field: "Date",
 					dir: "asc"
@@ -89,7 +86,7 @@
                 { field: "Description", title: "Description" },
                 { field: "CategoryId", title: "Category",template: "#= CategoryName #", editor : $scope.editCategoryControl },
 				{ field: "Amount", title: "Amount" },                
-                { command: [{ template: "<a class='glyphicon' ng-click='editTransaction($event)' href='' style='min-width:16px;' title='Delete'>Delete</a>" }], title: " ", width: "5%" }
+                { command: [{ template: "<a class='glyphicon' ng-click='editTransaction($event)' href='' style='min-width:16px;' title='Edit Detail'>Edit Detail</a>" }], title: " ", width: "5%" }
 
 			],
 			scrollable: false,
@@ -106,6 +103,8 @@
 			}
 		}
 		$scope.transactionGrid = new customGridFactory(prop, $scope);
+
+		$('.add-content').slideUp("slow");
 	};
 
 	$scope.editCategoryControl = function (container, options) {
@@ -179,23 +178,32 @@
 	};
 
 	$scope.updateTransaction = function (e) {
-	    console.log(e);
+	    //console.log(e);
 
-	    $http({
-	        method: "POST",
-	        url: window.ROOT + "Transaction/updateTransaction",
-	        processData: false,
-	        contentType: false,
-	        data: {
-	            transactionViewModel: e.model
-	        }
-	    }).success(function (callback) {
-	        if (callback.success) {
+	    //$scope.transactions = $.map($scope.accounts, function (item) {
+	    //    if (item.Id == e.model.Id) {
+	    //        item.CategoryId = e.model.CategoryId;
+	    //        item.CategoryName = e.model.CategoryName;
+	    //    }
+	    //    return item
+	    //});
+
+	    $scope.getAllTransaction();
+	    //$http({
+	    //    method: "POST",
+	    //    url: window.ROOT + "Transaction/updateTransaction",
+	    //    processData: false,
+	    //    contentType: false,
+	    //    data: {
+	    //        transactionViewModel: e.model
+	    //    }
+	    //}).success(function (callback) {
+	    //    if (callback.success) {
 	            
-	        } else {
-	            $scope.helpers.pageStatus.showFailureMessage(callback.message);
-	        }
-	    });
+	    //    } else {
+	    //        $scope.helpers.pageStatus.showFailureMessage(callback.message);
+	    //    }
+	    //});
 	}
 }
 ]);

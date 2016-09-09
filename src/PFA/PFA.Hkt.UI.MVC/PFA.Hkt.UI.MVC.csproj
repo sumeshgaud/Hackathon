@@ -161,6 +161,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BudgetViewModel.cs" />
     <Compile Include="Models\RegistrationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebApi\ValuesController.cs" />
@@ -405,6 +406,7 @@
     <Content Include="Scripts\Core\knockout-2.2.0.js" />
     <Content Include="Scripts\Core\modernizr-2.6.2.js" />
     <Content Include="Scripts\Core\_references.js" />
+    <Content Include="Scripts\Feature\Budget\alpha.budget.js" />
     <Content Include="Scripts\Feature\Comman\alpha.chart.js" />
     <Content Include="Scripts\Feature\Comman\alpha.constant.js" />
     <Content Include="Scripts\Feature\Comman\alpha.helper.directives.js" />

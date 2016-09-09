@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using BusinessModel;
+using System.Net;
+
+namespace PFA.Hkt.UI.MVC.Controllers
+{
+    public class SettingController : Controller
+    {
+        private readonly ICommonService _commonService;
+
+        public SettingController(ICommonService commonService)
+        {
+            _commonService = commonService;
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Create(beCategory category)
+        {
+            if (category != null && ModelState.IsValid)
+            {
+                try
+                {
+                    _commonService.CreateCategory(category);
+                    return RedirectToAction("Index");
+                }
+                catch (Exception)
+                {
+
+                    ModelState.AddModelError("", "Unable to create category. Please contact your system admin for more details");
+                }
+            }
+
+            else
+            {
+                ModelState.AddModelError("", "Please enter a Unique number");
+            }
+
+            return View();
+
+        }
+
+        public ActionResult GetAllCategory()
+        {
+<<<<<<< HEAD
+            var userId = Guid.Parse("d0f2801c-537a-49a1-a053-addc99bb43da");
+            var categories = _commonService.GetAllCategory(userId);
+            return Json(categories, JsonRequestBehavior.AllowGet);
+=======
+            if (userId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var categories = _commonService.GetAllCategory(userId);
+            return View(categories.ToList());
+>>>>>>> c509a81459f301693a001f0e10f6bc8aacaa1262
+        }
+
+        public ActionResult Delete(Guid UserId, Guid Id)
+        {
+            bool successStatus = false;
+
+            if (Id != null)
+            {
+                successStatus = _commonService.DeleteCategory(Id);
+                if (successStatus)
+                {
+                    ViewBag.Message = "Category Deleted Successfully";
+                }
+            }
+
+            return View();
+        }
+
+    }
+}

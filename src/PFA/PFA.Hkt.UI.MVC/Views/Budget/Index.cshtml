@@ -5,18 +5,28 @@
 @section styles{
 
 }
+
+@section scripts{
+    <script type="text/javascript">
+        var ROOT = '@Url.Content("~/")';
+        var response = {};
+
+    </script>
+}
+
+
 <script type="text/javascript" src="~/Scripts/Core/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript" src="~/Scripts/lib/moment.langs.min.js"></script>
 <script type="text/javascript" src="~/Scripts/lib/jquery.rangecalendar.js"></script>
 
 
 
-@*<script type="text/javascript" src="~/Scripts/Feature/Budget/apha.budget.js"></script>*@
+<script type="text/javascript" src="~/Scripts/Feature/Budget/alpha.budget.js"></script>
 
 
 @Html.Partial("_HeaderPartial")
 
-<div class="container theme-showcase margin-bottom">
+<div class="container theme-showcase margin-bottom" data-ng-controller="BudgetCtrl" data-ng-init="init()">
     <div class="in row">
         <div class="col-sm-12">
 
@@ -27,17 +37,7 @@
                     <div class="section border margin-bottom margin-top">
                         <div id="cal1"></div>
                     </div>
-                    <div class="dropdown pull-right">
-                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                            Sorting by:
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Category</a></li>
-                            <li><a href="#">Amount: high to low</a></li>
-                            <li><a href="#">Amount: low to high</a></li>
-                        </ul>
-                    </div>
+                    
                     <!-- Trigger the modal with a button -->
                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="color:grey; display: inline-block;"><b>+ Create A Budget</b></button>
                     <!-- Modal -->
@@ -50,20 +50,16 @@
                                     <h4 class="modal-title">Set a Budget</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <div>
-                                        <b>Choose a Category</b>
-                                        <div class="dropdown">
-                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                Sorting by:
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Category1</a></li>
-                                                <li><a href="#">Category2</a></li>
-                                                <li><a href="#">Category3</a></li>
-                                            </ul>
+                                    <div class="col-sm-6 no-left-padding">
+                                        <div class="form-group">
+                                            <label for="txtFirst">Category: <span class="mandatory">*</span></label>
+                                            <select class="form-control" ng-model="Budget.CategoryId"
+                                                    required ng-options="l.Id as l.CategoryName for l in categories">
+                                                <option value="">Select</option>                                                
+                                            </select>
                                         </div>
                                     </div>
+                                    <div class="clear"></div>
                                     <b>When will this happen?</b>
                                     <div class="radio">
                                         <label class="radio-inline"><input type="radio" name="optradio">Once</label>
@@ -71,7 +67,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="amount"><b>Amount</b></label>
-                                        <input type="text" class="form-control" style="width:20%" id="amount">
+                                        <input type="text" class="form-control" onkeypress="return iAlphaUtility.helpers.handlers.checkNonNumericCharacters(event)" style="width:50%" id="amount">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -83,26 +79,18 @@
                     </div>
                     <hr>
                     <div class="container1" style="width: 80%; margin-left:auto;margin-right:auto;">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                40% Complete (success)
+                        <div ng-repeat="budget in budgets">
+                            <div class="bar-title">
+                                <p id="bar-title-1" ng-model=""><i>{{budget.CategoryName}}</i></p>
+                            </div>
+                            <div class="progress">
+
+                                <div class="progress-bar-show progress-bar-success text-center progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{(budget.RecievedAmmount / budget.Amount)*100 }}%">
+                                    {{budget.RecievedAmmount}} rs. of {{budget.Amount}} rs Received.
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                50% Complete (info)
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                60% Complete (warning)
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                70% Complete (danger)
-                            </div>
-                        </div>
+
                     </div>
                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#everything-else" style="color:black"><span class="caret"></span>Everything Else</button>
                     <div id="everything-else" class="collapse">
@@ -120,6 +108,7 @@
                     </div>
                 </div>
             </div>
+
 
 
 

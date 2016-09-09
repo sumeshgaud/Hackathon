@@ -57,7 +57,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
             registrationViewModel.CreatedBy = User.Identity.Name;
             Guid userId = _userService.CreateUser(registrationViewModel);
             if (userId != null)
-                return RedirectToAction("Login");
+                return Json(new { Success= true }, JsonRequestBehavior.AllowGet);
             else
                 return View("Register");
         }

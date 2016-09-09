@@ -49,6 +49,8 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public ActionResult GetAllCategory()
         {
+            var userId = Guid.Parse("9673fa47-354a-4e3e-bfc0-47fc3b8f0677");
+
             if (userId == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

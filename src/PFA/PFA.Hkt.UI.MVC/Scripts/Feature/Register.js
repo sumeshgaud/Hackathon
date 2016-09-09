@@ -110,8 +110,8 @@ function RegisterCtrl($scope, $http, $window, $q) {
                     registrationViewModel: $scope.registrationDetails
                 }
             }).success(function (callback) {
-                if (callback.success) {
-                    $scope.location = window.ROOT + "Account/Login";
+                if (callback.Success) {
+                    $window.location = window.ROOT + "Account/Login";
                 } else {
                     $scope.helpers.pageStatus.showFailureMessage(callback.message);                   
                 }

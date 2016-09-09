@@ -29,13 +29,15 @@
                                     <th>
                                         <div class="form-group">
                                             <label for="fga">Goal Amount:</label>
-                                            <input type="text" ng-model="calculator.GoalAmount" class="form-control" id="fga">
+                                            <input type="text" ng-model="calculator.GoalAmount"
+                                                   onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" id="fga">
                                         </div>
                                     </th>
                                     <th>
                                         <div class="form-group">
                                             <label for="fga">Time Period :</label>
-                                            <input type="text" class="form-control" ng-model="calculator.Year" id="fga" placeholder="Years">
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)"
+                                                   class="form-control" ng-model="calculator.Year" id="fga" placeholder="Years">
                                             
                                         </div>
                                     </th>
@@ -43,7 +45,7 @@
                                         <div class="form-group">
                                             
                                             <label for="fga">&nbsp;</label>
-                                            <input type="text" class="form-control" ng-model="calculator.Month" id="fga" placeholder="Months">
+                                            <input type="text" class="form-control" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" ng-model="calculator.Month" id="fga" placeholder="Months">
                                         </div>
                                     </th>
                                 </tr>
@@ -51,19 +53,19 @@
                                     <td>
                                         <div class="form-group">
                                             <label for="high-risk">High Risk Portfolio Percentage  (%):</label>
-                                            <input type="text" ng-model="calculator.HighRiskPercentage" class="form-control" id="high-risk" >
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" ng-model="calculator.HighRiskPercentage" class="form-control" id="high-risk">
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="medium-risk">Medium Risk Portfolio Percentage  (%):</label>
-                                            <input type="text" class="form-control" ng-model="calculator.MedRiskPercentage" id="medium-risk" >
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" ng-model="calculator.MedRiskPercentage" id="medium-risk">
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="low-risk">Low Risk Portfolio Percentage  (%):</label>
-                                            <input type="text" class="form-control" ng-model="calculator.LowRiskPercentage" id="low-risk">
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" ng-model="calculator.LowRiskPercentage" id="low-risk">
 
                                         </div>
                                     </td>
@@ -72,22 +74,22 @@
                                     <td>
                                         <div class="form-group">
                                             <label for="interest-range">High Interest Range (%):</label>
-                                            <input type="text" class="form-control" ng-model="calculator.HighInterestFrom" id="interest-range-from1" placeholder="From"><br>
-                                            <input type="text" class="form-control" ng-model="calculator.HighInterestTo" id="interest-range-to1" placeholder="To">
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" ng-model="calculator.HighInterestFrom" id="interest-range-from1" placeholder="From"><br>
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" ng-model="calculator.HighInterestTo" id="interest-range-to1" placeholder="To">
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="interest-range">Medium Interest Range (%):</label>
-                                            <input type="text" class="form-control" id="interest-range-from2" ng-model="calculator.MedInterestFrom" placeholder="From"><br>
-                                            <input type="text" class="form-control" id="interest-range-to2" ng-model="calculator.MedInterestTo" placeholder="To">
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" id="interest-range-from2" ng-model="calculator.MedInterestFrom" placeholder="From"><br>
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" id="interest-range-to2" ng-model="calculator.MedInterestTo" placeholder="To">
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="interest-range">Low Interest Range (%):</label>
-                                            <input type="text" class="form-control" id="interest-range-from3" ng-model="calculator.LowInterestFrom" placeholder="From"><br>
-                                            <input type="text" class="form-control" id="interest-range-to3" ng-model="calculator.LowInterestTo" placeholder="To">
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" id="interest-range-from3" ng-model="calculator.LowInterestFrom" placeholder="From"><br>
+                                            <input type="text" onkeypress="return iAplhaUtility.helpers.handlers.checkNonNumericCharacters(event)" class="form-control" id="interest-range-to3" ng-model="calculator.LowInterestTo" placeholder="To">
                                         </div>
                                     </td>
                                 </tr>

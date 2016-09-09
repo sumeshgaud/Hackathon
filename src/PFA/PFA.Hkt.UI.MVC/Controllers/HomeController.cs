@@ -22,11 +22,11 @@ namespace PFA.Hkt.UI.MVC.Controllers
         {
             var objModel = _accountServices.GetAllAccounts();
             string strName = string.Empty;
-            foreach (var item in objModel)
-            {
-                strName = item.Description;
-            }
-            ViewBag.FirstName = strName;
+            //foreach (var item in objModel)
+            //{
+            //    strName = item.Description;
+            //}
+            //ViewBag.FirstName = strName;
             return View();
         }
 

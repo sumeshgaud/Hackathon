@@ -46,6 +46,20 @@ iAlphaUtility.helpers = {
         }
     },
     handlers: {
+        checkNonNumericCharacters: function (event) {
+            if (!((event.keyCode >= 48) && (event.keyCode <= 57))) {
+                event.returnValue = false;
+                return;
+            }
+            event.returnValue = true;
+        },
+        checkNumericAndSpecialCharacters: function () {
+            if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode == 32) || (event.keyCode >= 97 && event.keyCode <= 122)) {
+                event.returnValue = true;
+                return;
+            }
+            event.returnValue = false;
+        },
         // Function to restrict user from entering non numberic characters        
         customizePaginaion: function (arg, dataSource, gridId, message) {
             // var colCount = arg.sender.columns.length;

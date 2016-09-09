@@ -6,12 +6,9 @@
 	$scope.init = function () {
 		
 	    $q.all([
-            //$http.get(window.ROOT + "Account/GetAllAccounts")
             $http.get(window.ROOT + "Setting/GetAllCategory")
 	    ]).then(function (results) {
-	        ///$scope.accounts = results[0].data;
 	        $scope.categories = results[0].data;
-
 	        $scope.mappedCategories = $.map($scope.categories, function (item) {
 	            return {
 	                label: item.CategoryName, value: item.Id
@@ -29,19 +26,20 @@
 	        $scope.SetMultiselectDropdown('ddlAccount', accountData, 'Select Account');
 	    });
 	    
-		$scope.setupControls();
+	    $scope.setupControls();
+
+	    $scope.getAllTransaction();
 	};
 
 	$scope.getAllTransaction = function () {
-	    //$q.all([
-            //$http.get(window.ROOT + "Account/GetAllAccounts")
-            //$http.get(window.ROOT + "Transaction/GetAllTransaction")
-	    //]).then(function (results) {
-	        ///$scope.accounts = results[0].data;
-	    $scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
-    { Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
-    { Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }];
-	    //}).finally(function () {
+	    $q.all([
+            $http.get(window.ROOT + "Transaction/GetAllTransactions")
+	    ]).then(function (results) {
+	        $scope.transactions = results[0].data;
+	//    $scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
+    //{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
+    //{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }];
+	//    //}).finally(function () {
 	        if ($scope.transactionGrid == undefined) {
 	            $scope.setupControls();
 	        } else {
@@ -51,7 +49,7 @@
 	            }
 	            $scope.transactionGrid.refresh();
 	        }
-	    //});
+	    });
 	};
 
 	$scope.reloadGrid = function () {
@@ -60,9 +58,9 @@
 
 	$scope.setupControls = function () {
 
-	    $scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
-		{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
-		{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }]
+	    //$scope.transactions = [{ Id: "123", Date: new Date(), Description: "BCD", CategoryName: "ABC", CategoryId: "a0b5a5df-3200-43e6-8942-030d91e27253", Amount: 100 },
+		//{ Id: "sdf", Date: new Date(), Description: "KFC1", CategoryName: "DRD", CategoryId: "f8685693-4e6b-46fb-8a24-9994516c3320", Amount: 100 },
+		//{ Id: "sdfsdwre", Date: new Date(), Description: "KFC2", CategoryName: "ABC", CategoryId: "2a005613-3fab-4441-86fa-e1047eb328a4", Amount: 100 }]
 		var prop = {
 			tableId: "TransactionGrid",
 			dataSource: {
@@ -108,8 +106,6 @@
 			}
 		}
 		$scope.transactionGrid = new customGridFactory(prop, $scope);
-
-		$('.add-content').slideUp("slow");
 	};
 
 	$scope.editCategoryControl = function (container, options) {

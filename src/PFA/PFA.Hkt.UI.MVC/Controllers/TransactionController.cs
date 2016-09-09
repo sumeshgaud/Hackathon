@@ -23,7 +23,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public ActionResult Index()
         {
-            return View(_transactionService.GetAllTransaction());
+            return View();
         }
 
         public ActionResult Create()
@@ -133,16 +133,12 @@ namespace PFA.Hkt.UI.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Details(Guid UserId)
+        public JsonResult GetAllTransactions()
         {
-            if (UserId == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+            Guid userId = Guid.Parse("d0f2801c-537a-49a1-a053-addc99bb43da");
+            IEnumerable<beTransaction> result = _transactionService.GetAllTransaction(userId);
 
-            IEnumerable<beTransaction> result = _transactionService.GetAllTransaction(UserId);
-
-            return View(result);
+            return Json(result.ToList(), JsonRequestBehavior.AllowGet);
         }
     }
 }

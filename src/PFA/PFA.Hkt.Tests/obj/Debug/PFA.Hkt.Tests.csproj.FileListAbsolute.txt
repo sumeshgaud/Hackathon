@@ -269,3 +269,42 @@ E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\EntityFramework.xml
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.dll
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll.config
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.Tests.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Unity.Mvc3.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\PFA.Hkt.UI.MVC.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.Razor.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.pdb

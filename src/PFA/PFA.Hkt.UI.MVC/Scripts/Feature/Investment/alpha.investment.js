@@ -45,8 +45,8 @@
           data: [{ "label": new Date().getFullYear(), "value": $scope.initialInvestment },
               { "label": (new Date().getFullYear() + (parseInt($scope.calculator.Year) + parseFloat($scope.calculator.Month / 12))), "value": $scope.calculator.GoalAmount }],
           totalItemCount: 2,
-          caption: "coming soon",
-          subCaption: "Alpha charts -- coming soon"
+          caption: "Calculation",
+          subCaption: "Monthly Budget Investment"
       });      
 
       budgetChart.render();

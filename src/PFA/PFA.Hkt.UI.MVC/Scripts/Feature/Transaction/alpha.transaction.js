@@ -134,7 +134,9 @@
 	$scope.addNewRowForEdit = function (e) {
 	    var row = $('<tr><td><label class="form-control labelDisable">Walmart</label></td>' +
                                     '<td colspan="2">'+
-                                        '<div class="drop-down"></div>'+
+                                        '<select class="form-control" required><option value="">Select</option><option value="8f67e9e8-cd0a-4a16-a467-a51abe964e10">Category 1</option>'+                                           
+                       
+                                        '</select>'+
                                     '</td>'+
                                     '<td><input name="txtAccountName" type="text" class="form-control" id="txtAccountName1"></td>'+
                                     '<td><button class="btn btn-primary pull-left split-remove"><span class="glyphicon"></span> Remove</button></td></tr>');

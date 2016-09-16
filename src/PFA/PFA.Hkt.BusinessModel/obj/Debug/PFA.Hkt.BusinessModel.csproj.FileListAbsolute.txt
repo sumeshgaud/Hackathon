@@ -25,3 +25,14 @@ E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.xml
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\PFA.Hkt.BusinessModel.csprojResolveAssemblyReference.cache
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.dll
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\PFA.Hkt.BusinessModel.csprojResolveAssemblyReference.cache
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\BusinessModel.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\BusinessModel.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\AutoMapper.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\DataModel.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\AutoMapper.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\DataModel.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.pdb

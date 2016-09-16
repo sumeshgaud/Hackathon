@@ -24,3 +24,16 @@ E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\PFA.Hkt.Resolver.csprojResolveAssemblyReference.cache
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.dll
 E:\PFA_Private\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Unity.Mvc3.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\PFA.Hkt.Resolver.csprojResolveAssemblyReference.cache
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.dll
+D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.pdb

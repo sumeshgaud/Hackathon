@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS</title>
+    <script src="Scripts/Core/angular.js"></script>
+    <script src="Scripts/Custom/App.js"></script>
+    <script src="Scripts/Custom/BaseController.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="parantCtrl">
+        <section aria-valuetext="Parant">
+            <input type="text" name="Name" ng-model="Name" />
+            <span>{{Name}}</span>
+            <span>{{LastName}}</span>
+            <span>{{FullName}}</span>
+        </section>
+
+        <section aria-valuetext="Child" ng-controller="childCtrl1">
+            <input type="text" name="Name" ng-model="Name" />
+            <span>{{Name}}</span>
+            <span>{{LastName}}</span>
+            <span>{{FullName}}</span>
+        </section>
+
+        <section aria-valuetext="Child" ng-controller="childCtrl2">
+            <input type="text" name="Name" ng-model="Name" />
+            <span>{{Name}}</span>
+            <span>{{LastName}}</span>
+            <span>{{FullName}}</span>
+        </section>
+    </div>
+</body>
+</html>

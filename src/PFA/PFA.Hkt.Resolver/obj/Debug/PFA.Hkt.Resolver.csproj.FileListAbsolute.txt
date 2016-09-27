@@ -37,3 +37,16 @@ D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microso
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\PFA.Hkt.Resolver.csprojResolveAssemblyReference.cache
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.dll
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Resolver.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Unity.Mvc3.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\PFA.Hkt.Resolver.csprojResolveAssemblyReference.cache
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Resolver\obj\Debug\Resolver.pdb

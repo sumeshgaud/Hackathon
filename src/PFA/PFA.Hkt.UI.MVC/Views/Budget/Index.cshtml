@@ -2,157 +2,118 @@
     ViewBag.Title = "Budget";
     ViewBag.Menu = "Budget";
 }
-@section styles{
+<script src="~/Scripts/Core/angular.js"></script>
+<script src="~/Scripts/Custom/App.js"></script>
+<script src="~/Scripts/Custom/BudgetCtrl.js"></script>
 
-}
+<style>
+    .btn-space {
+        margin-left: -5%;
+        background-color: cornflowerblue;
+        font-size: large;
+    }
+</style>
 
-@section scripts{
-    <script type="text/javascript">
-        var ROOT = '@Url.Content("~/")';
-        var response = {};
+<h2>Budget</h2>
+<div ng-app="myApp">
+    <div ng-controller="budgetCtrl" ng-init="GetAllData()" class="divList">
+        <p class="divHead">List of Budget</p>
+        <table cellpadding="12" class="table table-bordered table-hover">
+            <tr>
+                <td>
+                    <b>UserId</b>
+                </td>
+                <td>
+                    <b>Type</b>
+                </td>
+                <td>
+                    <b>Month</b>
+                </td>
+                <td>
+                    <b>Year</b>
+                </td>
+                <td>
+                    <b>IsRecuring</b>
+                </td>
+                <td>
+                    <b>Actions</b>
+                </td>
+            </tr>
+            <tr ng-repeat="Bugt in Budget">
+                <td>{{Bugt.UserId}}</td>
+                <td>{{Bugt.Type}}</td>
+                <td>{{Bugt.Month}}</td>
+                <td>{{Bugt.Year}}</td>
+                <td>{{Bugt.IsRecuring}}</td>
+                <td>
+                    <input type="button" class="btn btn-warning" value="Update" ng-click="UpdateBugt(Bugt)" />
+                    <input type="button" class="btn btn-danger" value="Delete" ng-click="DeleteBugt(Bugt)" />
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    </script>
-}
-
-
-<script type="text/javascript" src="~/Scripts/Core/jquery.ui.touch-punch.min.js"></script>
-<script type="text/javascript" src="~/Scripts/lib/moment.langs.min.js"></script>
-<script type="text/javascript" src="~/Scripts/lib/jquery.rangecalendar.js"></script>
-
-
-
-<script type="text/javascript" src="~/Scripts/Feature/Budget/alpha.budget.js"></script>
-
-
-@Html.Partial("_HeaderPartial")
-
-<div class="container theme-showcase margin-bottom" data-ng-controller="BudgetCtrl" data-ng-init="init()">
-    <div class="in row">
-        <div class="col-sm-12">
-
-            @Html.Partial("_SideLayout")
-
-            <div class="col-sm-8 no-right-padding info-table">
-                <div class="col-sm-8 no-right-padding no-left-padding">
-                    <div class="section border margin-bottom margin-top">
-                        <div id="cal1"></div>
-                    </div>
-                    
-                    <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="color:grey; display: inline-block;"><b>+ Create A Budget</b></button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog vertical-align-center">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Set a Budget</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="col-sm-6 no-left-padding">
-                                        <div class="form-group">
-                                            <label for="txtFirst">Category: <span class="mandatory">*</span></label>
-                                            <select class="form-control" ng-model="Budget.CategoryId"
-                                                    required ng-options="l.Id as l.CategoryName for l in categories">
-                                                <option value="">Select</option>                                                
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <b>When will this happen?</b>
-                                    <div class="radio">
-                                        <label class="radio-inline"><input type="radio" name="optradio">Once</label>
-                                        <label class="radio-inline"><input type="radio" name="optradio">Every Month</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="amount"><b>Amount</b></label>
-                                        <input type="text" class="form-control" onkeypress="return iAlphaUtility.helpers.handlers.checkNonNumericCharacters(event)" style="width:50%" id="amount">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-warning">Save</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+    @*Create Budget *@
+    <div class="form-horizontal" role="form">
+        <div class="container">
+            <div class="row">
+                <h2>
+                    <span id="spn">Add New Budget</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">UserId:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputUserId" placeholder="Name" ng-model="UserId">
                         </div>
                     </div>
-                    <hr>
-                    <div class="container1" style="width: 80%; margin-left:auto;margin-right:auto;">
-                        <div ng-repeat="budget in budgets">
-                            <div class="bar-title">
-                                <p id="bar-title-1" ng-model=""><i>{{budget.CategoryName}}</i></p>
-                            </div>
-                            <div class="progress">
-
-                                <div class="progress-bar-show progress-bar-success text-center progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{(budget.RecievedAmmount / budget.Amount)*100 }}%">
-                                    {{budget.RecievedAmmount}} rs. of {{budget.Amount}} rs Received.
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#everything-else" style="color:black"><span class="caret"></span>Everything Else</button>
-                    <div id="everything-else" class="collapse">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <hr>
-                    <p align=center>You have -$122 left over in your budget.<p>
                 </div>
-                <div class="col-sm-4 no-right-padding">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" style"word-wrap break-word;"><h3>You’ve budgeted...</h3></div>
-                        <div class="panel-body" style"word-wrap break-word;">Income:<span class="pull-right">{{income}}rs</span><br>Spending:<span class="pull-right">{{expense}}rs.</span><br>Goals:<span class="pull-right">0rs.</span><br><hr><b>Left over:<span class="pull-right">{{finalAmmount}}rs.</span></b></div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Type:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputType" placeholder="Type" ng-model="Type">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Month:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputMonth" placeholder="Month" ng-model="Month">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Year:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputYear" placeholder="Year" ng-model="Year">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">IsRecuring:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputIsRecuring" placeholder="IsRecuring" ng-model="IsRecuring">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <input type="button" id="btnSave" class="form-control btn-space" value="Submit" ng-click="InsertData()" />
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
+    @Html.Hidden("Id")
 </div>
-
-
-<script>
-    $(document).ready(function () {
-
-        var defaultCalendar = $("#cal1").rangeCalendar();
-
-
-        function rangeChanged(target, range) {
-
-
-            console.log(range);
-            var startDay = moment(range.start).format('DD');
-            var startMonth = moment(range.start).format('MMM');
-            var startYear = moment(range.start).format('YY');
-            var endDay = moment(range.end).format('DD');
-            var endMonth = moment(range.end).format('MMM');
-            var endYear = moment(range.end).format('YY');
-
-
-            $(".calendar-values .start-date .value").html(startDay);
-            $(".calendar-values .start-date .label").html("");
-            $(".calendar-values .start-date .label").append(startMonth);
-            $(".calendar-values .start-date .label").append("<small>" + startYear + "</small>");
-            $(".calendar-values .end-date .value").html(endDay);
-            $(".calendar-values .end-date .label").html("");
-            $(".calendar-values .end-date .label").append(endMonth);
-            $(".calendar-values .end-date .label").append("<small>" + endYear + "</small>");
-            $(".calendar-values .days-width .value").html(range.width);
-            $(".calendar-values .from-now .label").html(range.fromNow);
-
-        }
-
-        function ragneChanged(target, range) {
-
-            console.log(range);
-        }
-
-    });
-
-</script>

@@ -43,3 +43,16 @@ D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Pr
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\PFA.Hkt.DataModel.csprojResolveAssemblyReference.cache
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.dll
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.dll.config
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\DataModel.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.SqlServer.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\EntityFramework.SqlServer.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\bin\Microsoft.Practices.ServiceLocation.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\PFA.Hkt.DataModel.csprojResolveAssemblyReference.cache
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.DataModel\obj\Debug\DataModel.pdb

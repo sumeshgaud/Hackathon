@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessModel
 {
-    interface IBudgetService
+   public interface IBudgetService
     {
         beBudget GetBudgetById(Guid budgetId);
         IEnumerable<beBudget> GetAllBudget();

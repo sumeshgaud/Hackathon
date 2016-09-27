@@ -7,7 +7,7 @@ using AutoMapper;
 
 namespace BusinessModel
 {
-    class BudgetService : IBudgetService
+   public class BudgetService : IBudgetService
     {
         private IUnitOfWork _unitOfWork;
 

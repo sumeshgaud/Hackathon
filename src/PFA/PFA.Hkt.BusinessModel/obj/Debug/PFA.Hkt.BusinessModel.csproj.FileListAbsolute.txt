@@ -36,3 +36,14 @@ D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\DataMode
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.xml
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.dll
 D:\Hackathon\New Repository\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\BusinessModel.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\BusinessModel.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\AutoMapper.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\DataModel.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\AutoMapper.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\DataModel.pdb
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\bin\EntityFramework.xml
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\PFA.Hkt.BusinessModel.csprojResolveAssemblyReference.cache
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.dll
+E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.BusinessModel\obj\Debug\BusinessModel.pdb

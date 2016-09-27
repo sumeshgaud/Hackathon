@@ -382,6 +382,7 @@
     <Content Include="Content\Lib\Telerik\styles\images\kendoui.ttf" />
     <Content Include="Content\Lib\Telerik\styles\images\kendoui.woff" />
     <None Include="Scripts\Core\jquery-1.8.2.intellisense.js" />
+    <Content Include="MyPage.html" />
     <Content Include="Scripts\Core\angular-route.js" />
     <Content Include="Scripts\Core\angular-sanitize.js" />
     <Content Include="Scripts\Core\angular-sanitize.min.js" />
@@ -406,6 +407,9 @@
     <Content Include="Scripts\Core\knockout-2.2.0.js" />
     <Content Include="Scripts\Core\modernizr-2.6.2.js" />
     <Content Include="Scripts\Core\_references.js" />
+    <Content Include="Scripts\Custom\App.js" />
+    <Content Include="Scripts\Custom\BaseController.js" />
+    <Content Include="Scripts\Custom\BudgetCtrl.js" />
     <Content Include="Scripts\Feature\Budget\alpha.budget.js" />
     <Content Include="Scripts\Feature\Comman\alpha.chart.js" />
     <Content Include="Scripts\Feature\Comman\alpha.constant.js" />

@@ -5,6 +5,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataModel
 {
@@ -13,7 +14,8 @@ namespace DataModel
 
         public RecurTransactionMap()
        {
-           HasKey(t => new { t.Id });
+           HasKey(t => t.Id);
+           Property(t => t.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
            Property(t => t.RecurType).IsRequired();
            Property(t => t.RecurDays).IsRequired();
            Property(t => t.NumberOfTimes).IsRequired();

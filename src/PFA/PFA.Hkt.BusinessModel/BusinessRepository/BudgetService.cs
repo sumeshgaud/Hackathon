@@ -17,7 +17,7 @@ namespace BusinessModel
         }
 
         #region "Budget Methods"
-        public beBudget GetBudgetById(Guid budgetId)
+        public beBudget GetBudgetById(int budgetId)
         {
             var budget = _unitOfWork.BudgetRepository.GetById(budgetId);
             if (budget != null)
@@ -43,13 +43,13 @@ namespace BusinessModel
             return null;
         }
 
-        public Guid CreateBudget(beBudget budgetEntity)
+        public int CreateBudget(beBudget budgetEntity)
         {
             using (var scope = new TransactionScope())
             {
                 var budget = new Budget
                 {
-                    Id = new Guid(),
+                    Id = new int(),
                     UserId = budgetEntity.UserId,
                     Month = budgetEntity.Month,
                     Year = budgetEntity.Year,
@@ -67,7 +67,7 @@ namespace BusinessModel
             }
         }
 
-        public bool UpdateBudget(Guid budgetId, beBudget budgetEntity)
+        public bool UpdateBudget(int budgetId, beBudget budgetEntity)
         {
             var success = false;
             if (budgetEntity != null)
@@ -89,7 +89,7 @@ namespace BusinessModel
             return success;
         }
 
-        public bool DeleteBudget(Guid budgetId)
+        public bool DeleteBudget(int budgetId)
         {
             var success = false;
             if (budgetId != null)
@@ -117,7 +117,7 @@ namespace BusinessModel
         #endregion
 
         #region "Budget Detail Methods"
-        public beBudgetDetail GetBudgetDtialById(Guid budgetDetailId)
+        public beBudgetDetail GetBudgetDtialById(int budgetDetailId)
         {
             var budgetDetail = _unitOfWork.BudgetDetailRepository.GetById(budgetDetailId);
             if (budgetDetail != null)
@@ -143,7 +143,7 @@ namespace BusinessModel
             return null;
         }
 
-        public IEnumerable<beBudgetDetail> GetAllBudgetDetailByBudgetId(Guid budgetId)
+        public IEnumerable<beBudgetDetail> GetAllBudgetDetailByBudgetId(int budgetId)
         {
             var budgetDetail = _unitOfWork.BudgetDetailRepository.GetMany(b => b.BudgetId == budgetId).ToList();
 
@@ -157,13 +157,13 @@ namespace BusinessModel
             return null;
         }
 
-        public Guid CreateBudgetDetail(beBudgetDetail budgetDetailEntity)
+        public int CreateBudgetDetail(beBudgetDetail budgetDetailEntity)
         {
             using (var scope = new TransactionScope())
             {
                 var budgetDetail = new BudgetDetail
                 {
-                    Id = new Guid(),
+                    Id = new int(),
                     BudgetId = budgetDetailEntity.BudgetId,
                     Amount = budgetDetailEntity.Amount,
                     CategoryId = budgetDetailEntity.CategoryId,
@@ -179,7 +179,7 @@ namespace BusinessModel
             }
         }
 
-        public bool UpdateBudgetDetail(Guid budgetDetailId, beBudgetDetail budgetDetailEntity)
+        public bool UpdateBudgetDetail(int budgetDetailId, beBudgetDetail budgetDetailEntity)
         {
             var success = false;
             if (budgetDetailEntity != null)
@@ -201,7 +201,7 @@ namespace BusinessModel
             return success;
         }
 
-        public bool DeleteBudgetDetail(Guid budgetDetailId)
+        public bool DeleteBudgetDetail(int budgetDetailId)
         {
             var success = false;
             if (budgetDetailId != null)

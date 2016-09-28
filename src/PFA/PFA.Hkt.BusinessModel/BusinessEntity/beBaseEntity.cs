@@ -8,7 +8,7 @@ namespace BusinessModel
 {
     public abstract class beBaseEntity
     {
-        public Guid Id;
+        public int Id;
         public string CreatedBy;
         public DateTime CreatedOn;
         public string ModifiedBy;

@@ -8,6 +8,7 @@ using BusinessModel;
 
 namespace PFA.Hkt.UI.MVC.Controllers
 {
+    [AllowAnonymous]
     public class BudgetController : Controller
     {
         //
@@ -33,14 +34,27 @@ namespace PFA.Hkt.UI.MVC.Controllers
         {
             if (budget != null)
             {
-                Guid Id = _budgetServices.CreateBudget(budget);
-                if(Id!=Guid.Empty)
+                int Id = _budgetServices.CreateBudget(budget);
+                if(Id!=0)
                     return "Budget Added Successfully";  
                 else
                     return "Budget Not Added! Try Again";
             }
             else
                 return "Budget Not Added! Try Again";
+        }
+
+        public string Delete_Budget(int Id)
+        {
+            if (Id != 0)
+            {
+              var status=  _budgetServices.DeleteBudget(Id);
+                if(status)
+                    return "Budget Deleted Successfully"; 
+                else
+                    return "Budget Not Deleted! Try Again";
+            }
+            return "Budget Not Deleted! Try Again";
         }
 
 

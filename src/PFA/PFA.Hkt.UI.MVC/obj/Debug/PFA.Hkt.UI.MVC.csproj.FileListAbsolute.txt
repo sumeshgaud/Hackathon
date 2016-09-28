@@ -310,7 +310,6 @@ E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Microsoft.Practices.ServiceLo
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Microsoft.Practices.ServiceLocation.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Microsoft.Practices.Unity.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Microsoft.Practices.Unity.Configuration.xml
-E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Resolver.pdb
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\Newtonsoft.Json.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\System.Net.Http.Formatting.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.UI.MVC\bin\System.Web.Http.xml

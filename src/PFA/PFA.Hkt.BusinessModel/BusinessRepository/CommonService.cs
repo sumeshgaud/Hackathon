@@ -18,12 +18,12 @@ namespace BusinessModel
             _unitOfWork = unitOfWork;
         }
 
-        public beCategory GetCategoryById(Guid categoryId)
+        public beCategory GetCategoryById(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<beCategory> GetAllCategory(Guid userId)
+        public IEnumerable<beCategory> GetAllCategory(int userId)
         {
 
             var categoryList = _unitOfWork.CategoryRepository.GetAll().ToList();
@@ -46,7 +46,7 @@ namespace BusinessModel
             }
         }
 
-        public Guid CreateCategory(beCategory categoryEntity)
+        public int CreateCategory(beCategory categoryEntity)
         {
             try
             {
@@ -54,7 +54,6 @@ namespace BusinessModel
                 {
                     var category = new Category
                     {
-                        Id = Guid.NewGuid(),
                         UserId = categoryEntity.UserId,
                         CategoryName = categoryEntity.CategoryName,
                         Type = categoryEntity.Type,
@@ -74,12 +73,12 @@ namespace BusinessModel
             }
         }
  
-        public bool UpdateCategory(Guid categoryId, beCategory categoryEntity)
+        public bool UpdateCategory(int categoryId, beCategory categoryEntity)
         {
             throw new NotImplementedException();
         }
 
-        public bool DeleteCategory(Guid categoryId)
+        public bool DeleteCategory(int categoryId)
         {
             bool IsSuccess = false;
             try

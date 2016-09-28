@@ -15,8 +15,8 @@
 </style>
 
 <h2>Budget</h2>
-<div ng-app="myApp">
-    <div ng-controller="budgetCtrl" ng-init="GetAllData()" class="divList">
+<div ng-app="myApp" ng-controller="budgetCtrl">
+    <div ng-init="GetAllData()" class="divList">
         <p class="divHead">List of Budget</p>
         <table cellpadding="12" class="table table-bordered table-hover">
             <tr>
@@ -46,8 +46,8 @@
                 <td>{{Bugt.Year}}</td>
                 <td>{{Bugt.IsRecuring}}</td>
                 <td>
-                    <input type="button" class="btn btn-warning" value="Update" ng-click="UpdateBugt(Bugt)" />
-                    <input type="button" class="btn btn-danger" value="Delete" ng-click="DeleteBugt(Bugt)" />
+                    <input type="button" class="btn btn-warning" value="Update" ng-click="UpdateBudget(Bugt)" />
+                    <input type="button" class="btn btn-danger" value="Delete" ng-click="DeleteBudget(Bugt)" />
                 </td>
             </tr>
         </table>

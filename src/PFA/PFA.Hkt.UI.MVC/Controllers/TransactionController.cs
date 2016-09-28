@@ -57,7 +57,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         }
 
-        public ActionResult Edit(Guid Id)
+        public ActionResult Edit(int Id)
         {
             if (Id == null)
             {
@@ -74,7 +74,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
 
         [HttpPost, ActionName("Edit")]
-        public ActionResult EditPost([Bind(Include = "Description,CategoryId")] beTransaction transcation, Guid Id)
+        public ActionResult EditPost([Bind(Include = "Description,CategoryId")] beTransaction transcation, int Id)
         {
             
             if (Id == null)
@@ -101,7 +101,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
 
 
-        public ActionResult Delete(Guid Id)
+        public ActionResult Delete(int Id)
         {
             if (Id == null)
             {
@@ -118,7 +118,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(Guid Id)
+        public ActionResult DeleteConfirmed(int Id)
         {
             bool isSuccess = false;
             if (Id != null)
@@ -135,7 +135,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public JsonResult GetAllTransactions()
         {
-            Guid userId = Guid.Parse("d0f2801c-537a-49a1-a053-addc99bb43da");
+            int userId = int.Parse("d0f2801c-537a-49a1-a053-addc99bb43da");
             IEnumerable<beTransaction> result = _transactionService.GetAllTransaction(userId);
 
             return Json(result.ToList(), JsonRequestBehavior.AllowGet);

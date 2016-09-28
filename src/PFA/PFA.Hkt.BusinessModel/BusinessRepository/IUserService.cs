@@ -8,11 +8,11 @@ namespace BusinessModel
 {
     public interface IUserService
     {
-        beUser GetAccountById(Guid userId);
+        beUser GetAccountById(int userId);
         IEnumerable<beUser> GetAllUsers();
-        Guid CreateUser(beUser userEntity);
-        bool UpdateUser(Guid userId, beUser userEntity);
-        bool DeleteUser(Guid userId);
+        int CreateUser(beUser userEntity);
+        bool UpdateUser(int userId, beUser userEntity);
+        bool DeleteUser(int userId);
         bool IsValid(string userName, string password);
         IEnumerable<beCurrency> GetAllCurrency();
     }

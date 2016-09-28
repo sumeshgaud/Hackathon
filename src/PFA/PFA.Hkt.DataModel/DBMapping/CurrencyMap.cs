@@ -5,6 +5,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataModel
 {
@@ -12,7 +13,8 @@ namespace DataModel
     {
         public CurrencyMap()
        {
-           HasKey(t => new { t.Id });
+           HasKey(t => t.Id);
+           Property(t => t.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
            Property(t => t.Name);
            Property(t => t.Country);
            ToTable("Currency");

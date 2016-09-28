@@ -8,7 +8,7 @@ namespace BusinessModel
 {
   public  class beBudget:beBaseEntity
     {
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string Type { get; set; }
         public int Month { get; set; }
         public int Year { get; set; }

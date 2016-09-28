@@ -16,7 +16,7 @@ namespace BusinessModel
             _unitOfWork = unitOfWork;
         }
 
-        public beAccount GetUserById(Guid accountId)
+        public beAccount GetUserById(int accountId)
         {
             var account = _unitOfWork.AccountRepository.GetById(accountId);
             if (account != null)
@@ -42,22 +42,22 @@ namespace BusinessModel
             return null;
         }
 
-        public beAccount GetAccountById(Guid accountId)
+        public beAccount GetAccountById(int accountId)
         {
             throw new NotImplementedException();
         }
 
-        public Guid CreateAccount(beAccount accountEntity)
+        public int CreateAccount(beAccount accountEntity)
         {
             throw new NotImplementedException();
         }
 
-        public bool UpdateAccount(Guid accountId, beAccount accountEntity)
+        public bool UpdateAccount(int accountId, beAccount accountEntity)
         {
             throw new NotImplementedException();
         }
 
-        public bool DeleteAccount(Guid accountId)
+        public bool DeleteAccount(int accountId)
         {
             throw new NotImplementedException();
         }

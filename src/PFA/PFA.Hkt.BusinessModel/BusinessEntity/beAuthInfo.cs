@@ -8,9 +8,9 @@ namespace BusinessModel
 {
    public class beAuthInfo:beBaseEntity
     {
-        public Guid AccountId { get; set; }
+        public int AccountId { get; set; }
         public string Token { get; set; }
-        public Guid MerchantId { get; set; }
-        public Guid UserId { get; set; }
+        public int MerchantId { get; set; }
+        public int UserId { get; set; }
     }
 }

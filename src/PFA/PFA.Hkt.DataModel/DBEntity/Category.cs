@@ -9,10 +9,10 @@ namespace DataModel
    public  class Category :BaseEntity
     {   
        
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string CategoryName { get; set; }
         public string Type { get; set; }
         public bool IsActive { get; set; }
-        public Guid? ParentCategoryId { get; set; }
+        public int? ParentCategoryId { get; set; }
     }
 }

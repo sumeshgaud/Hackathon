@@ -12,7 +12,7 @@
         {
             $http({
                 method: "post",
-                url: "http://localhost:39209/Budget/Insert_Budget",
+                url: "http://localhost:51080/Budget/Insert_Budget",
                 datatype: "json",
                 data: JSON.stringify($scope.Budget)
             }).then(function (response) {
@@ -59,16 +59,21 @@
         })
     }
 
-    $scope.DeleteBudget = function () {
-
+    $scope.DeleteBudget = function (Budgt) {
+        $http({
+            method: "post",
+            url: "http://localhost:51080//Budget/Delete_Budget",
+            datatype: "JSON",
+            data: JSON.stringify(Budgt.Id)
+        }).then(function (response) {
+            alert(response.data);
+            $scope.GetAllData();
+        })
     }
 
     $scope.UpdateBudget = function () {
+        $scope.
 
     }
-
-
-
-
 
 });

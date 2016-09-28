@@ -8,8 +8,8 @@ namespace DataModel
 {
    public class BudgetDetail:BaseEntity
     {
-       public Guid BudgetId { get; set; }
-       public Guid CategoryId { get; set; }
+       public int BudgetId { get; set; }
+       public int CategoryId { get; set; }
        public double Amount { get; set; }
     }
 }

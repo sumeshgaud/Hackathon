@@ -8,7 +8,7 @@ namespace DataModel
 {
     public class RecurTransaction : BaseEntity
     {
-        public Guid TransactionId { get; set; }
+        public int TransactionId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime StopDate { get; set; }
         public string RecurType { get; set; }

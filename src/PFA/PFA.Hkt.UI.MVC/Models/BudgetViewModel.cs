@@ -11,7 +11,7 @@ namespace PFA.Hkt.UI.MVC.Models
         public string CategoryName { get; set; }
         public double Amount { get; set; }
 
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string Type { get; set; }
         public int Month { get; set; }
         public int Year { get; set; }

@@ -17,7 +17,7 @@ namespace BusinessModel
             _unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<beAccount> GetAccountsByUserId(Guid userId)
+        public IEnumerable<beAccount> GetAccountsByUserId(int userId)
         {
             Func<Account, bool> predicate = (p => p.UserId == userId);
             var accountModel = _unitOfWork.AccountRepository.GetMany(predicate).ToList();
@@ -54,7 +54,7 @@ namespace BusinessModel
             }
         }
 
-        public IEnumerable<beTransaction> GetAllTransaction(Guid UserID)
+        public IEnumerable<beTransaction> GetAllTransaction(int UserID)
         {
             var transcationList = _unitOfWork.TransactionRepository.GetAll().Where(x => x.UserId == UserID).ToList();
 
@@ -76,13 +76,13 @@ namespace BusinessModel
             }
         }
 
-        public Guid CreateTransaction(beTransaction transEntity)
+        public int CreateTransaction(beTransaction transEntity)
         {
             using (var scope = new TransactionScope())
             {
                 var transaction  = new BankTransaction
                 {
-                   Id = new Guid(),
+                   Id = new int(),
                    AccountId = transEntity.AccountId,
                    Amount =transEntity.Amount,
                    CategoryId = transEntity.CategoryId,
@@ -105,7 +105,7 @@ namespace BusinessModel
             }
         }
 
-        public bool UpdateTransaction(Guid transId, beTransaction transEntity)
+        public bool UpdateTransaction(int transId, beTransaction transEntity)
         {
             var success = false;
             if (transEntity != null)
@@ -127,7 +127,7 @@ namespace BusinessModel
             return success;
         }
 
-        public bool DeleteTransaction(Guid transId)
+        public bool DeleteTransaction(int transId)
         {
             var success = false;
             if (transId != null)
@@ -146,7 +146,7 @@ namespace BusinessModel
             return success;
         }
 
-        public beTransaction GetTransactionById(Guid transId)
+        public beTransaction GetTransactionById(int transId)
         {
             var transactionDetails = _unitOfWork.TransactionRepository.GetById(transId);
             if (transactionDetails != null)

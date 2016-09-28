@@ -9,10 +9,10 @@ namespace BusinessModel
 {
     public interface IAccountService
     {
-        beAccount GetAccountById(Guid accountId);
+        beAccount GetAccountById(int accountId);
         IEnumerable<beAccount> GetAllAccounts();
-        Guid CreateAccount(beAccount accountEntity);
-        bool UpdateAccount(Guid accountId, beAccount accountEntity);
-        bool DeleteAccount(Guid accountId);
+        int CreateAccount(beAccount accountEntity);
+        bool UpdateAccount(int accountId, beAccount accountEntity);
+        bool DeleteAccount(int accountId);
     }
 }

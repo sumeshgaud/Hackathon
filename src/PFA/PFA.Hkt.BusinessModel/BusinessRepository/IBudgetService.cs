@@ -8,19 +8,19 @@ namespace BusinessModel
 {
    public interface IBudgetService
     {
-        beBudget GetBudgetById(Guid budgetId);
+        beBudget GetBudgetById(int budgetId);
         IEnumerable<beBudget> GetAllBudget();
-        Guid CreateBudget(beBudget budgetEntity);
-        bool UpdateBudget(Guid budgetId, beBudget budgetEntity);
-        bool DeleteBudget(Guid budgetId);
+        int CreateBudget(beBudget budgetEntity);
+        bool UpdateBudget(int budgetId, beBudget budgetEntity);
+        bool DeleteBudget(int budgetId);
 
         #region "Budget Detail"
-        beBudgetDetail GetBudgetDtialById(Guid budgetDetailId);
+        beBudgetDetail GetBudgetDtialById(int budgetDetailId);
         IEnumerable<beBudgetDetail> GetAllBudgetDetail();
-        Guid CreateBudgetDetail(beBudgetDetail budgetDetailEntity);
-        bool UpdateBudgetDetail(Guid budgetDetailId, beBudgetDetail budgetDetailEntity);
-        bool DeleteBudgetDetail(Guid budgetDetailId);
-        IEnumerable<beBudgetDetail> GetAllBudgetDetailByBudgetId(Guid budgetId);
+        int CreateBudgetDetail(beBudgetDetail budgetDetailEntity);
+        bool UpdateBudgetDetail(int budgetDetailId, beBudgetDetail budgetDetailEntity);
+        bool DeleteBudgetDetail(int budgetDetailId);
+        IEnumerable<beBudgetDetail> GetAllBudgetDetailByBudgetId(int budgetId);
         #endregion
     }
 }

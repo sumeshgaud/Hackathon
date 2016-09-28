@@ -16,6 +16,6 @@ namespace DataModel
        public bool IsActive { get; set; }
        public int ?PrimaryNumber { get; set; }
        public string Email { get; set; }
-       public Guid ?CurrencyId { get; set; }
+       public int ?CurrencyId { get; set; }
     }
 }

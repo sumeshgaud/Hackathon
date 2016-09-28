@@ -56,7 +56,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
             registrationViewModel.CreatedOn = DateTime.Now;
             registrationViewModel.ModifiedOn = DateTime.Now;
             registrationViewModel.CreatedBy = User.Identity.Name;
-            Guid userId = _userService.CreateUser(registrationViewModel);
+            int userId = _userService.CreateUser(registrationViewModel);
             if (userId != null)
                 return Json(new { Success= true }, JsonRequestBehavior.AllowGet);
             else

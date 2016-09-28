@@ -49,7 +49,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
 
         public ActionResult GetAllCategory()
         {
-            var userId = Guid.Parse("9673fa47-354a-4e3e-bfc0-47fc3b8f0677");
+            var userId = int.Parse("9673fa47-354a-4e3e-bfc0-47fc3b8f0677");
 
             if (userId == null)
             {
@@ -59,7 +59,7 @@ namespace PFA.Hkt.UI.MVC.Controllers
             return Json(categories, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Delete(Guid UserId, Guid Id)
+        public ActionResult Delete(int UserId, int Id)
         {
             bool successStatus = false;
 

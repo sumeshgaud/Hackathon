@@ -9,12 +9,12 @@ namespace BusinessModel
 {
     public interface ITransactionService
     {
-        beTransaction GetTransactionById(Guid transId);
-        IEnumerable<beTransaction> GetAllTransaction(Guid UserID);
+        beTransaction GetTransactionById(int transId);
+        IEnumerable<beTransaction> GetAllTransaction(int UserID);
         IEnumerable<beTransaction> GetAllTransaction();
-        Guid CreateTransaction(beTransaction transEntity);
-        bool UpdateTransaction(Guid transId, beTransaction transEntity);
-        bool DeleteTransaction(Guid transId);
+        int CreateTransaction(beTransaction transEntity);
+        bool UpdateTransaction(int transId, beTransaction transEntity);
+        bool DeleteTransaction(int transId);
 
     }
 }

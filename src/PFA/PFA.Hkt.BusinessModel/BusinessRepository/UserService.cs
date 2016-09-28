@@ -16,7 +16,7 @@ namespace BusinessModel
             _unitOfWork = unitOfWork;
         }
 
-        public beUser GetAccountById(Guid userId)
+        public beUser GetAccountById(int userId)
         {
             var user = _unitOfWork.UserRepository.GetById(userId);
             if (user != null)
@@ -42,13 +42,12 @@ namespace BusinessModel
             return null;
         }
 
-        public Guid CreateUser(beUser userEntity)
+        public int CreateUser(beUser userEntity)
         {
             using (var scope = new TransactionScope())
             {
                 var user = new User
                 {
-                    Id = Guid.NewGuid(),
                     FirstName = userEntity.FirstName,
                     LastName = userEntity.LastName,
                     Email = userEntity.Email,
@@ -70,7 +69,7 @@ namespace BusinessModel
             }
         }
 
-        public bool UpdateUser(Guid userId, beUser userEntity)
+        public bool UpdateUser(int userId, beUser userEntity)
         {
             var success = false;
             if (userEntity != null)
@@ -96,7 +95,7 @@ namespace BusinessModel
             return success;
         }
 
-        public bool DeleteUser(Guid userId)
+        public bool DeleteUser(int userId)
         {
             var success = false;
             if (userId != null)

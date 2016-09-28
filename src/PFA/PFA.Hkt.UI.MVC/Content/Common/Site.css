@@ -871,7 +871,7 @@ a, a:focus { outline: none; }
 .compare-plan-list .plan .cost-breakdown ul > li { width: 100%; text-align: right }
 .cost-breakdown h5 { color: #2b85c3; font-size: 16px; font-weight: bold; margin-bottom: 20px }
 .cost-breakdown .close-cost-breakdown { padding: 1px 10px 3px }
-/*Guided Wizards*/
+/*inted Wizards*/
 .check-answers { position: static; display: table; margin: 10px 0 }
 .question+.question { border-top: 1px solid #ddd; }
 .question { padding: 15px 0 }

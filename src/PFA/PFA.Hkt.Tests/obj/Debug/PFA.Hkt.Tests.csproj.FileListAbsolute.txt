@@ -341,7 +341,6 @@ E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.Unity.xml
-E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Resolver.pdb
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 E:\Vishal\PFA\Hackathon\src\PFA\PFA.Hkt.Tests\obj\Debug\PFA.Hkt.Tests.csprojResolveAssemblyReference.cache
